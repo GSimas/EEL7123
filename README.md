@@ -1,6 +1,6 @@
 ## ***🖩EEL7123 - Tópico Avançado em Sistemas Digitais***
 
-> "A resposta certa, não importa nada: o essencial é que as perguntas estejam certas." - **Mário Quintana**
+> "A realidade é aquilo que, quando você para de acreditar, não desaparece." - **Philip K. Dick**
 
 **Curso**: [Engenharia Eletrônica](http://cagr.sistemas.ufsc.br/relatorios/curriculoCurso?curso=235) - Universidade Federal de Santa Catarina ([UFSC](ufsc.br)), Florianópolis, SC, Brasil
 
