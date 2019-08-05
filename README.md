@@ -1,5 +1,7 @@
 ## ***🖩EEL7123 - Tópico Avançado em Sistemas Digitais***
 
+> "A resposta certa, não importa nada: o essencial é que as perguntas estejam certas." - **Mário Quintana**
+
 **Curso**: [Engenharia Eletrônica](http://cagr.sistemas.ufsc.br/relatorios/curriculoCurso?curso=235) - Universidade Federal de Santa Catarina ([UFSC](ufsc.br)), Florianópolis, SC, Brasil
 
 **Ementa**: Sistemas de numeração alternativos úteis no projeto de unidades aritméticas; Algoritmos
@@ -15,7 +17,7 @@ de hardware VHDL.
 Se você tem interesse em contribuir, faça o clone do repositório da seguinte forma:
 
 ```
-$ git clone git@github.com:GSimas/EEL5105.git
+$ git clone git@github.com:GSimas/EEL7123.git
 ```
 
 Fique livre para adicionar issues *relevantes*, acrescentar resoluções de exercícios, desenvolvimento de projetos, aperfeiçoamento de conteúdo, entre outros materiais adicionais. Caso utilize material de terceiros, referencie da devida forma, dando os créditos para os autores.
