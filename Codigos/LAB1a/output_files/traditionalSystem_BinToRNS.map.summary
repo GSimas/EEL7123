@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Apr 06 10:52:38 2016
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Wed Sep 04 15:12:31 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : traditionalSystem_BinToRNS
 Top-level Entity Name : traditionalSystem_BinToRNS
 Family : Cyclone II
-Total logic elements : 66
-    Total combinational functions : 66
+Total logic elements : 65
+    Total combinational functions : 65
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 33

@@ -80,25 +80,17 @@ notSW(4*n-1 downto 0) <= not(SW(4*n-1 downto 0));
 converter : block
 
 begin
-LEDR(2*n-1 downto 0) <= SW(2*n-1 downto 0);
+LEDR(2*n-1 downto 0) <= SW();
 
 comp0_2n_m1: CSA_2n_mp_1	generic map	(  n => n , modo => 0)
 	                       port map ( I0 => SW(n-1 downto 0), I1 => SW(2*n-1 downto n), I2 => SW(3*n-1 downto 2*n), S =>sum0_2n_m1 , C =>carry0_2n_m1); 
-comp1_2n_m1: CSA_2n_mp_1	generic map	(  n => n , modo => 0)
-	                       port map ( I0 => carry0_2n_m1, I1 => sum0_2n_m1, I2 => SW(4*n-1 downto 3*n), S =>sum1_2n_m1 , C =>carry1_2n_m1); 
-add_2n_m1: adder_2n_mp_1 generic map	(  n => n , modo => 0)
-	                       port map ( A => carry1_2n_m1, B => sum1_2n_m1, S =>LEDR(3*n-1 downto 2*n) ); 
+comp1_2n_m1: 
+add_2n_m1: 
 
-								  
-								  
-comp0_2n_p1: CSA_2n_mp_1	generic map	(  n => n , modo => 1)
-	                       port map ( I0 => SW(n-1 downto 0), I1 => notSW(2*n-1 downto n), I2 => SW(3*n-1 downto 2*n), S =>sum0_2n_p1 , C =>carry0_2n_p1); 
-comp1_2n_p1: CSA_2n_mp_1	generic map	(  n => n , modo => 1)
-	                       port map ( I0 => carry0_2n_p1, I1 => sum0_2n_p1, I2 => notSW(4*n-1 downto 3*n), S =>sum1_2n_p1 , C =>carry1_2n_p1); 
-comp2_2n_p1: CSA_2n_mp_1	generic map	(  n => n , modo => 1)
-	                       port map ( I0 => "0000", I1 => carry1_2n_p1, I2 => sum1_2n_p1, S =>sum2_2n_p1 , C =>carry2_2n_p1); 
-add_2n_p1: adder_2n_mp_1 generic map	(  n => n , modo => 1)
-	                       port map ( A => carry2_2n_p1, B => sum2_2n_p1, S =>LEDR(4*n downto 3*n+1), Cout => LEDR(3*n)); 
+comp0_2n_p1:
+comp1_2n_p1: 
+comp2_2n_p1: 
+add_2n_p1: 
 
 end block;
 
