@@ -1,0 +1,209 @@
+|somadorversatil
+SW[0] => Input_b[0].IN0
+SW[0] => mux21:mux_1.B
+SW[0] => mux21:mux_2.A
+SW[0] => adder_8bits:adder_1.A[2]
+SW[0] => LEDR[0].DATAIN
+SW[1] => Input_b[1].IN0
+SW[1] => mux21:mux_2.B
+SW[1] => mux21:mux_3.A
+SW[1] => adder_8bits:adder_1.A[3]
+SW[1] => LEDR[1].DATAIN
+SW[2] => Input_b[2].IN0
+SW[2] => adder_8bits:adder_1.A[6]
+SW[2] => adder_8bits:adder_1.A[4]
+SW[2] => adder_8bits:adder_1.A[0]
+SW[2] => mux21:mux_3.B
+SW[3] => Input_b[6].IN0
+SW[3] => Input_b[7].IN0
+SW[3] => mux21:mux_1.A
+SW[3] => adder_8bits:adder_1.A[5]
+SW[3] => adder_8bits:adder_1.A[1]
+SW[4] => Input_b[0].IN1
+SW[4] => Input_b[1].IN1
+SW[4] => Input_b[6].IN1
+SW[4] => Input_b[7].IN1
+SW[4] => mux21:mux_1.s
+SW[4] => mux21:mux_2.s
+SW[4] => mux21:mux_3.s
+SW[4] => adder_8bits:adder_1.A[7]
+SW[4] => Input_b[2].IN1
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= adder_8bits:adder_1.S[0]
+LEDR[3] <= adder_8bits:adder_1.S[1]
+LEDR[4] <= adder_8bits:adder_1.S[2]
+LEDR[5] <= adder_8bits:adder_1.S[3]
+LEDR[6] <= adder_8bits:adder_1.S[4]
+LEDR[7] <= adder_8bits:adder_1.S[5]
+LEDR[8] <= adder_8bits:adder_1.S[6]
+LEDR[9] <= adder_8bits:adder_1.S[7]
+LEDR[10] <= adder_8bits:adder_1.S[8]
+LEDR[11] <= <GND>
+LEDR[12] <= <GND>
+LEDR[13] <= <GND>
+LEDR[14] <= <GND>
+LEDR[15] <= <GND>
+LEDR[16] <= <GND>
+LEDR[17] <= <GND>
+LEDG[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= LEDG[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= LEDG[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] <= LEDG[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[4] <= LEDG[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[5] <= LEDG[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[6] <= LEDG[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[7] <= LEDG[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|mux21:mux_1
+A => F.DATAB
+B => F.DATAA
+s => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|mux21:mux_2
+A => F.DATAB
+B => F.DATAA
+s => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|mux21:mux_3
+A => F.DATAB
+B => F.DATAA
+s => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1
+A[0] => fulladder:cpa_1:0:cpa_j.A
+A[1] => fulladder:cpa_1:1:cpa_j.A
+A[2] => fulladder:cpa_1:2:cpa_j.A
+A[3] => fulladder:cpa_1:3:cpa_j.A
+A[4] => fulladder:cpa_1:4:cpa_j.A
+A[5] => fulladder:cpa_1:5:cpa_j.A
+A[6] => fulladder:cpa_1:6:cpa_j.A
+A[7] => fulladder:cpa_1:7:cpa_j.A
+B[0] => fulladder:cpa_1:0:cpa_j.B
+B[1] => fulladder:cpa_1:1:cpa_j.B
+B[2] => fulladder:cpa_1:2:cpa_j.B
+B[3] => fulladder:cpa_1:3:cpa_j.B
+B[4] => fulladder:cpa_1:4:cpa_j.B
+B[5] => fulladder:cpa_1:5:cpa_j.B
+B[6] => fulladder:cpa_1:6:cpa_j.B
+B[7] => fulladder:cpa_1:7:cpa_j.B
+Cin => fulladder:cpa_1:0:cpa_j.Cin
+S[0] <= fulladder:cpa_1:0:cpa_j.S
+S[1] <= fulladder:cpa_1:1:cpa_j.S
+S[2] <= fulladder:cpa_1:2:cpa_j.S
+S[3] <= fulladder:cpa_1:3:cpa_j.S
+S[4] <= fulladder:cpa_1:4:cpa_j.S
+S[5] <= fulladder:cpa_1:5:cpa_j.S
+S[6] <= fulladder:cpa_1:6:cpa_j.S
+S[7] <= fulladder:cpa_1:7:cpa_j.S
+S[8] <= fulladder:cpa_1:7:cpa_j.Cout
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:0:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:1:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:2:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:3:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:4:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:5:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:6:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorversatil|adder_8bits:adder_1|fulladder:\cpa_1:7:cpa_j
+A => F1.IN0
+A => F2.IN0
+B => F1.IN1
+B => F2.IN1
+Cin => S.IN1
+Cin => F3.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
