@@ -1,0 +1,62 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do traditionalSystem_BinToRNS_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {traditionalSystem_BinToRNS.vho}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity traditionalSystem_BinToRNS
+# -- Compiling architecture structure of traditionalSystem_BinToRNS
+# 
+vsim -voptargs=+acc work.traditionalsystem_bintorns
+# vsim -voptargs=+acc work.traditionalsystem_bintorns 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.traditionalsystem_bintorns(structure)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+add wave  \
+sim:/traditionalsystem_bintorns/SW \
+sim:/traditionalsystem_bintorns/LEDR
+force -freeze sim:/traditionalsystem_bintorns/SW 0000000000000000 0
+run
+force -freeze sim:/traditionalsystem_bintorns/SW 0000000111111111 0
+run
+force -freeze sim:/traditionalsystem_bintorns/SW 0000001111111100 0
+run
+force -freeze sim:/traditionalsystem_bintorns/SW 0000110110100010 0
+run
+force -freeze sim:/traditionalsystem_bintorns/LEDR 0000000000010000 0
+# Value length (16) does not equal array index length (17).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0000000000010000 0.
+# 
+run
+force -freeze sim:/traditionalsystem_bintorns/SW 0000000000010000 0
+run
