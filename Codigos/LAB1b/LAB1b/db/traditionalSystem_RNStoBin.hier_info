@@ -1,43 +1,38 @@
 |traditionalSystem_RNStoBin
 SW[0] => LEDR[0].DATAIN
-SW[0] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[0]
+SW[0] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[0]
 SW[1] => LEDR[1].DATAIN
-SW[1] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[1]
+SW[1] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[1]
 SW[2] => LEDR[2].DATAIN
-SW[2] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[2]
+SW[2] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[2]
 SW[3] => LEDR[3].DATAIN
-SW[3] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[3]
+SW[3] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[3]
 SW[4] => LEDR[4].DATAIN
-SW[4] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[4]
+SW[4] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[4]
 SW[5] => LEDR[5].DATAIN
-SW[5] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[5]
+SW[5] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[5]
 SW[6] => LEDR[6].DATAIN
-SW[6] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[6]
+SW[6] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[6]
 SW[7] => LEDR[7].DATAIN
-SW[7] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[7]
-SW[8] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[7]
-SW[8] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[3]
-SW[9] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[4]
-SW[9] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[0]
-SW[10] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[5]
-SW[10] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[1]
-SW[11] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[6]
-SW[11] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[2]
-SW[12] => CSA_2n_mp_1:converter:comp2_2n_m1.I0[7]
-SW[12] => CSA_2n_mp_1:converter:comp2_2n_m1.I0[3]
-SW[12] => CSA_2n_mp_1:converter:comp1_2n_m1.I0[4]
-SW[13] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[4]
+SW[7] => CSA_2n_mp_1:converter:comp0_2n_m1.I0[7]
+SW[8] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[7]
+SW[8] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[3]
+SW[9] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[4]
+SW[9] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[0]
+SW[10] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[5]
+SW[10] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[1]
+SW[11] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[6]
+SW[11] => CSA_2n_mp_1:converter:comp0_2n_m1.I1[2]
+SW[12] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[7]
+SW[12] => CSA_2n_mp_1:converter:comp1_2n_m1.I2[3]
 SW[13] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[0]
-SW[13] => CSA_2n_mp_1:converter:comp1_2n_m1.I0[5]
-SW[14] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[5]
+SW[13] => CSA_2n_mp_1:converter:comp1_2n_m1.I2[4]
 SW[14] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[1]
-SW[14] => CSA_2n_mp_1:converter:comp1_2n_m1.I0[6]
-SW[15] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[6]
+SW[14] => CSA_2n_mp_1:converter:comp1_2n_m1.I2[5]
 SW[15] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[2]
-SW[15] => CSA_2n_mp_1:converter:comp1_2n_m1.I0[7]
-SW[16] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[7]
+SW[15] => CSA_2n_mp_1:converter:comp1_2n_m1.I2[6]
 SW[16] => CSA_2n_mp_1:converter:comp0_2n_m1.I2[3]
-SW[16] => CSA_2n_mp_1:converter:comp1_2n_m1.I0[0]
+SW[16] => CSA_2n_mp_1:converter:comp1_2n_m1.I2[7]
 LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -338,153 +333,6 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:7:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1
-I0[0] => fulladder:ciclo:0:add.A
-I0[1] => fulladder:ciclo:1:add.A
-I0[2] => fulladder:ciclo:2:add.A
-I0[3] => fulladder:ciclo:3:add.A
-I0[4] => fulladder:ciclo:4:add.A
-I0[5] => fulladder:ciclo:5:add.A
-I0[6] => fulladder:ciclo:6:add.A
-I0[7] => fulladder:ciclo:7:add.A
-I1[0] => fulladder:ciclo:0:add.B
-I1[1] => fulladder:ciclo:1:add.B
-I1[2] => fulladder:ciclo:2:add.B
-I1[3] => fulladder:ciclo:3:add.B
-I1[4] => fulladder:ciclo:4:add.B
-I1[5] => fulladder:ciclo:5:add.B
-I1[6] => fulladder:ciclo:6:add.B
-I1[7] => fulladder:ciclo:7:add.B
-I2[0] => fulladder:ciclo:0:add.Cin
-I2[1] => fulladder:ciclo:1:add.Cin
-I2[2] => fulladder:ciclo:2:add.Cin
-I2[3] => fulladder:ciclo:3:add.Cin
-I2[4] => fulladder:ciclo:4:add.Cin
-I2[5] => fulladder:ciclo:5:add.Cin
-I2[6] => fulladder:ciclo:6:add.Cin
-I2[7] => fulladder:ciclo:7:add.Cin
-S[0] <= fulladder:ciclo:0:add.S
-S[1] <= fulladder:ciclo:1:add.S
-S[2] <= fulladder:ciclo:2:add.S
-S[3] <= fulladder:ciclo:3:add.S
-S[4] <= fulladder:ciclo:4:add.S
-S[5] <= fulladder:ciclo:5:add.S
-S[6] <= fulladder:ciclo:6:add.S
-S[7] <= fulladder:ciclo:7:add.S
-C[0] <= fulladder:ciclo:7:add.Cout
-C[1] <= fulladder:ciclo:0:add.Cout
-C[2] <= fulladder:ciclo:1:add.Cout
-C[3] <= fulladder:ciclo:2:add.Cout
-C[4] <= fulladder:ciclo:3:add.Cout
-C[5] <= fulladder:ciclo:4:add.Cout
-C[6] <= fulladder:ciclo:5:add.Cout
-C[7] <= fulladder:ciclo:6:add.Cout
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:0:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:1:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:2:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:3:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:4:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:5:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:6:add
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN1
-Cin => S.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|traditionalSystem_RNStoBin|CSA_2n_mp_1:\converter:comp2_2n_m1|fulladder:\ciclo:7:add
 A => S.IN0
 A => Cout.IN0
 A => Cout.IN0
