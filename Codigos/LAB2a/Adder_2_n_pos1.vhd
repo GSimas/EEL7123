@@ -11,7 +11,7 @@
  use IEEE.STD_LOGIC_1164.all;
  
  entity Adder_2_n_pos1 is
- 	generic(n : natural :=5);
+ 	generic(n : natural :=4);
  	 port(--entradas--
 			a : in STD_LOGIC_VECTOR(n downto 0);
 			b : in STD_LOGIC_VECTOR(n downto 0);

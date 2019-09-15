@@ -1,0 +1,24 @@
+
+State Machine - |LAB2a|ButtonSync:\converter:sync_btn|btn3state
+Name btn3state.EsperaSoltar btn3state.SaidaAtiva btn3state.EsperaApertar 
+btn3state.EsperaApertar 0 0 0 
+btn3state.SaidaAtiva 0 1 1 
+btn3state.EsperaSoltar 1 0 1 
+
+State Machine - |LAB2a|ButtonSync:\converter:sync_btn|btn2state
+Name btn2state.EsperaSoltar btn2state.SaidaAtiva btn2state.EsperaApertar 
+btn2state.EsperaApertar 0 0 0 
+btn2state.SaidaAtiva 0 1 1 
+btn2state.EsperaSoltar 1 0 1 
+
+State Machine - |LAB2a|ButtonSync:\converter:sync_btn|btn1state
+Name btn1state.EsperaSoltar btn1state.SaidaAtiva btn1state.EsperaApertar 
+btn1state.EsperaApertar 0 0 0 
+btn1state.SaidaAtiva 0 1 1 
+btn1state.EsperaSoltar 1 0 1 
+
+State Machine - |LAB2a|ButtonSync:\converter:sync_btn|btn0state
+Name btn0state.EsperaSoltar btn0state.SaidaAtiva btn0state.EsperaApertar 
+btn0state.EsperaApertar 0 0 0 
+btn0state.SaidaAtiva 0 1 1 
+btn0state.EsperaSoltar 1 0 1 

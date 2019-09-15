@@ -30,10 +30,10 @@ begin
 zeros <= (others=>'0');
 ones <= (others=>'1');
 
-cpa_cout(0) <= 
+cpa_cout(0) <= '0';
 
 cpa_1 : for j in 0 to 2*n-1 generate
-	cpa_1:	fulladder port map( A => , B => , Cin => , S => , Cout => );
+	cpa_1:	fulladder port map( A => a(j), B => b(j), Cin =>cpa_cout(j) , S =>s(j) , Cout =>cpa_cout(j+1) );
 end generate cpa_1;
 
 end structural;
