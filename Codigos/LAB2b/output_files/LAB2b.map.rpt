@@ -1,6 +1,6 @@
 Analysis & Synthesis report for LAB2b
-Sun Sep 15 22:53:37 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Wed Sep 18 19:17:29 2019
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
 ---------------------
@@ -15,22 +15,25 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |LAB2b
- 10. Parameter Settings for User Entity Instance: adder_2n_mp_1:\converter:cpa1
- 11. Parameter Settings for User Entity Instance: CSA_2n_mp_1:\converter:csa1
- 12. Parameter Settings for User Entity Instance: adder_2n_mp_1:\converter:cpa2
+ 10. Parameter Settings for User Entity Instance: CPA:\converter:cpa1
+ 11. Parameter Settings for User Entity Instance: CSA:\converter:csa1
+ 12. Parameter Settings for User Entity Instance: CPA:\converter:cpa2
  13. Parameter Settings for User Entity Instance: mux21:\converter:mux1
  14. Port Connectivity Checks: "Decod7seg:\converter:disp1"
- 15. Port Connectivity Checks: "adder_2n_mp_1:\converter:cpa2"
- 16. Port Connectivity Checks: "adder_2n_mp_1:\converter:cpa1"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 15. Port Connectivity Checks: "CPA:\converter:cpa2|fulladder:\cpa_1:5:cpa_j"
+ 16. Port Connectivity Checks: "CPA:\converter:cpa2|fulladder:\cpa_1:0:cpa_j"
+ 17. Port Connectivity Checks: "CSA:\converter:csa1|fulladder:\CSA_1:5:CSA_j"
+ 18. Port Connectivity Checks: "CPA:\converter:cpa1|fulladder:\cpa_1:4:cpa_j"
+ 19. Port Connectivity Checks: "CPA:\converter:cpa1|fulladder:\cpa_1:0:cpa_j"
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2012 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -46,24 +49,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 15 22:53:37 2019            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; LAB2b                                            ;
-; Top-level Entity Name              ; LAB2b                                            ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 68                                               ;
-;     Total combinational functions  ; 68                                               ;
-;     Dedicated logic registers      ; 0                                                ;
-; Total registers                    ; 0                                                ;
-; Total pins                         ; 32                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 18 19:17:29 2019    ;
+; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
+; Revision Name                      ; LAB2b                                    ;
+; Top-level Entity Name              ; LAB2b                                    ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 34                                       ;
+;     Total combinational functions  ; 34                                       ;
+;     Dedicated logic registers      ; 0                                        ;
+; Total registers                    ; 0                                        ;
+; Total pins                         ; 32                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -151,86 +154,85 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/mux21.vhd         ;         ;
-; fulladder.vhd                    ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/fulladder.vhd     ;         ;
-; fuctions.vhd                     ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/fuctions.vhd      ;         ;
-; Decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/Decod7seg.vhd     ;         ;
-; CSA_2n_mp_1.vhd                  ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/CSA_2n_mp_1.vhd   ;         ;
-; adder_2n_mp_1.vhd                ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/adder_2n_mp_1.vhd ;         ;
-; LAB2b.vhd                        ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2b/LAB2b.vhd         ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/mux21.vhd     ;         ;
+; fulladder.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/fulladder.vhd ;         ;
+; fuctions.vhd                     ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/fuctions.vhd  ;         ;
+; Decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/Decod7seg.vhd ;         ;
+; LAB2b.vhd                        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/LAB2b.vhd     ;         ;
+; CPA.vhd                          ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/CPA.vhd       ;         ;
+; CSA.vhd                          ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2b/CSA.vhd       ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimated Total logic elements              ; 68                           ;
-;                                             ;                              ;
-; Total combinational functions               ; 68                           ;
-; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 44                           ;
-;     -- 3 input functions                    ; 18                           ;
-;     -- <=2 input functions                  ; 6                            ;
-;                                             ;                              ;
-; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 68                           ;
-;     -- arithmetic mode                      ; 0                            ;
-;                                             ;                              ;
-; Total registers                             ; 0                            ;
-;     -- Dedicated logic registers            ; 0                            ;
-;     -- I/O registers                        ; 0                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 32                           ;
-; Embedded Multiplier 9-bit elements          ; 0                            ;
-; Maximum fan-out node                        ; mux21:\converter:mux1|F[0]~1 ;
-; Maximum fan-out                             ; 7                            ;
-; Total fan-out                               ; 253                          ;
-; Average fan-out                             ; 2.53                         ;
-+---------------------------------------------+------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 34    ;
+;                                             ;       ;
+; Total combinational functions               ; 34    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 22    ;
+;     -- 3 input functions                    ; 9     ;
+;     -- <=2 input functions                  ; 3     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 34    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 32    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out                             ; 7     ;
+; Total fan-out                               ; 132   ;
+; Average fan-out                             ; 2.00  ;
++---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
-; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Library Name ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
-; |LAB2b                             ; 68 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |LAB2b                                                    ; work         ;
-;    |CSA_2n_mp_1:\converter:csa1|   ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1                        ; work         ;
-;       |fulladder:\ciclo:0:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:0:add ; work         ;
-;       |fulladder:\ciclo:1:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:1:add ; work         ;
-;       |fulladder:\ciclo:2:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:2:add ; work         ;
-;       |fulladder:\ciclo:3:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:3:add ; work         ;
-;       |fulladder:\ciclo:4:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:4:add ; work         ;
-;       |fulladder:\ciclo:5:add|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:5:add ; work         ;
-;    |Decod7seg:\converter:disp2|    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|Decod7seg:\converter:disp2                         ; work         ;
-;    |adder_2n_mp_1:\converter:cpa1| ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|adder_2n_mp_1:\converter:cpa1                      ; work         ;
-;    |adder_2n_mp_1:\converter:cpa2| ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|adder_2n_mp_1:\converter:cpa2                      ; work         ;
-;    |mux21:\converter:mux1|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|mux21:\converter:mux1                              ; work         ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
+; |LAB2b                           ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |LAB2b                                              ;              ;
+;    |CPA:\converter:cpa1|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa1                          ;              ;
+;       |fulladder:\cpa_1:1:cpa_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa1|fulladder:\cpa_1:1:cpa_j ;              ;
+;       |fulladder:\cpa_1:2:cpa_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa1|fulladder:\cpa_1:2:cpa_j ;              ;
+;       |fulladder:\cpa_1:4:cpa_j| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa1|fulladder:\cpa_1:4:cpa_j ;              ;
+;    |CPA:\converter:cpa2|         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa2                          ;              ;
+;       |fulladder:\cpa_1:2:cpa_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa2|fulladder:\cpa_1:2:cpa_j ;              ;
+;       |fulladder:\cpa_1:3:cpa_j| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa2|fulladder:\cpa_1:3:cpa_j ;              ;
+;       |fulladder:\cpa_1:4:cpa_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa2|fulladder:\cpa_1:4:cpa_j ;              ;
+;       |fulladder:\cpa_1:5:cpa_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CPA:\converter:cpa2|fulladder:\cpa_1:5:cpa_j ;              ;
+;    |CSA:\converter:csa1|         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1                          ;              ;
+;       |fulladder:\CSA_1:0:CSA_j| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1|fulladder:\CSA_1:0:CSA_j ;              ;
+;       |fulladder:\CSA_1:1:CSA_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1|fulladder:\CSA_1:1:CSA_j ;              ;
+;       |fulladder:\CSA_1:2:CSA_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1|fulladder:\CSA_1:2:CSA_j ;              ;
+;       |fulladder:\CSA_1:3:CSA_j| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1|fulladder:\CSA_1:3:CSA_j ;              ;
+;       |fulladder:\CSA_1:4:CSA_j| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|CSA:\converter:csa1|fulladder:\CSA_1:4:CSA_j ;              ;
+;    |Decod7seg:\converter:disp2|  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|Decod7seg:\converter:disp2                   ;              ;
+;    |mux21:\converter:mux1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2b|mux21:\converter:mux1                        ;              ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -259,36 +261,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder_2n_mp_1:\converter:cpa1 ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; n              ; 5     ; Signed Integer                                    ;
-; modo           ; 0     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPA:\converter:cpa1 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CSA_2n_mp_1:\converter:csa1 ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; n              ; 6     ; Signed Integer                                  ;
-; modo           ; 0     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CSA:\converter:csa1 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 5     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder_2n_mp_1:\converter:cpa2 ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; n              ; 6     ; Signed Integer                                    ;
-; modo           ; 0     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPA:\converter:cpa2 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 5     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -312,7 +311,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder_2n_mp_1:\converter:cpa2"                                                      ;
+; Port Connectivity Checks: "CPA:\converter:cpa2|fulladder:\cpa_1:5:cpa_j"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPA:\converter:cpa2|fulladder:\cpa_1:0:cpa_j" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CSA:\converter:csa1|fulladder:\CSA_1:5:CSA_j"                                       ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -321,12 +338,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder_2n_mp_1:\converter:cpa1"                                                      ;
+; Port Connectivity Checks: "CPA:\converter:cpa1|fulladder:\cpa_1:4:cpa_j"                                       ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPA:\converter:cpa1|fulladder:\cpa_1:0:cpa_j" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
 
 
 +-------------------------------+
@@ -343,10 +369,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Sep 15 22:53:34 2019
+    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
+    Info: Processing started: Wed Sep 18 19:17:26 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB2b -c LAB2b
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mux21.vhd
     Info (12022): Found design unit 1: mux21-mux_estr
     Info (12023): Found entity 1: mux21
@@ -368,12 +394,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file adder_2
 Info (12021): Found 2 design units, including 1 entities, in source file lab2b.vhd
     Info (12022): Found design unit 1: LAB2b-Structural
     Info (12023): Found entity 1: LAB2b
+Info (12021): Found 2 design units, including 1 entities, in source file cpa.vhd
+    Info (12022): Found design unit 1: CPA-circuito_logico
+    Info (12023): Found entity 1: CPA
+Info (12021): Found 2 design units, including 1 entities, in source file csa.vhd
+    Info (12022): Found design unit 1: CSA-circuito_logico
+    Info (12023): Found entity 1: CSA
 Info (12127): Elaborating entity "LAB2b" for the top level hierarchy
-Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "adder_2n_mp_1:\converter:cpa1"
-Info (12128): Elaborating entity "CSA_2n_mp_1" for hierarchy "CSA_2n_mp_1:\converter:csa1"
-Warning (10036): Verilog HDL or VHDL warning at CSA_2n_mp_1.vhd(29): object "modo_b" assigned a value but never read
-Info (12128): Elaborating entity "fulladder" for hierarchy "CSA_2n_mp_1:\converter:csa1|fulladder:\ciclo:0:add"
-Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "adder_2n_mp_1:\converter:cpa2"
+Info (12128): Elaborating entity "CPA" for hierarchy "CPA:\converter:cpa1"
+Info (12128): Elaborating entity "fulladder" for hierarchy "CPA:\converter:cpa1|fulladder:\cpa_1:0:cpa_j"
+Info (12128): Elaborating entity "CSA" for hierarchy "CSA:\converter:csa1"
+Info (12128): Elaborating entity "CPA" for hierarchy "CPA:\converter:cpa2"
 Info (12128): Elaborating entity "mux21" for hierarchy "mux21:\converter:mux1"
 Info (12128): Elaborating entity "Decod7seg" for hierarchy "Decod7seg:\converter:disp1"
 Warning (13024): Output pins are stuck at VCC or GND
@@ -382,13 +413,13 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX1[6]" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 100 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 68 logic cells
+    Info (21061): Implemented 34 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4661 megabytes
-    Info: Processing ended: Sun Sep 15 22:53:37 2019
+    Info: Peak virtual memory: 498 megabytes
+    Info: Processing ended: Wed Sep 18 19:17:29 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

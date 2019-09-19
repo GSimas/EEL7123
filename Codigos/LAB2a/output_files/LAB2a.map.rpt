@@ -1,6 +1,6 @@
 Analysis & Synthesis report for LAB2a
-Sun Sep 15 20:24:39 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Tue Sep 17 19:33:56 2019
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
 ---------------------
@@ -75,7 +75,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2012 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -91,24 +91,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 15 20:24:39 2019            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; LAB2a                                            ;
-; Top-level Entity Name              ; LAB2a                                            ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 287                                              ;
-;     Total combinational functions  ; 271                                              ;
-;     Dedicated logic registers      ; 18                                               ;
-; Total registers                    ; 18                                               ;
-; Total pins                         ; 66                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
-+------------------------------------+--------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Sep 17 19:33:56 2019    ;
+; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
+; Revision Name                      ; LAB2a                                    ;
+; Top-level Entity Name              ; LAB2a                                    ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 287                                      ;
+;     Total combinational functions  ; 271                                      ;
+;     Dedicated logic registers      ; 18                                       ;
+; Total registers                    ; 18                                       ;
+; Total pins                         ; 75                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -196,73 +196,66 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
-; traditionalSystem_RNStoBin.vhd   ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/traditionalSystem_RNStoBin.vhd ;         ;
-; traditionalSystem_BinToRNS.vhd   ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/traditionalSystem_BinToRNS.vhd ;         ;
-; Mux2_1.vhd                       ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/Mux2_1.vhd                     ;         ;
-; fulladder.vhd                    ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/fulladder.vhd                  ;         ;
-; fuctions.vhd                     ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/fuctions.vhd                   ;         ;
-; Decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/Decod7seg.vhd                  ;         ;
-; CSA_2n_mp_1.vhd                  ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/CSA_2n_mp_1.vhd                ;         ;
-; ButtonSync.vhd                   ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/ButtonSync.vhd                 ;         ;
-; adder_2n_mp_1.vhd                ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/adder_2n_mp_1.vhd              ;         ;
-; Adder_2_n_pos1.vhd               ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/Adder_2_n_pos1.vhd             ;         ;
-; Adder_2_n_neg1.vhd               ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/Adder_2_n_neg1.vhd             ;         ;
-; Adder_2_2n.vhd                   ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/Adder_2_2n.vhd                 ;         ;
-; LAB2a.vhd                        ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/LAB2a.vhd                      ;         ;
-; D_16FF.vhd                       ; yes             ; User VHDL File  ; C:/Users/gusta/Documents/GitHub/EEL7123/Codigos/LAB2a/D_16FF.vhd                     ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
+; traditionalSystem_RNStoBin.vhd   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/traditionalSystem_RNStoBin.vhd ;         ;
+; traditionalSystem_BinToRNS.vhd   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/traditionalSystem_BinToRNS.vhd ;         ;
+; Mux2_1.vhd                       ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/Mux2_1.vhd                     ;         ;
+; fulladder.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/fulladder.vhd                  ;         ;
+; fuctions.vhd                     ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/fuctions.vhd                   ;         ;
+; Decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/Decod7seg.vhd                  ;         ;
+; CSA_2n_mp_1.vhd                  ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/CSA_2n_mp_1.vhd                ;         ;
+; ButtonSync.vhd                   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/ButtonSync.vhd                 ;         ;
+; adder_2n_mp_1.vhd                ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/adder_2n_mp_1.vhd              ;         ;
+; Adder_2_n_pos1.vhd               ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/Adder_2_n_pos1.vhd             ;         ;
+; Adder_2_n_neg1.vhd               ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/Adder_2_n_neg1.vhd             ;         ;
+; Adder_2_2n.vhd                   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/Adder_2_2n.vhd                 ;         ;
+; LAB2a.vhd                        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/LAB2a.vhd                      ;         ;
+; D_16FF.vhd                       ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/Codigos/LAB2a/D_16FF.vhd                     ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 287      ;
-;                                             ;          ;
-; Total combinational functions               ; 271      ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 183      ;
-;     -- 3 input functions                    ; 58       ;
-;     -- <=2 input functions                  ; 30       ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 271      ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 18       ;
-;     -- Dedicated logic registers            ; 18       ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 66       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 18       ;
-; Total fan-out                               ; 1062     ;
-; Average fan-out                             ; 2.99     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 287   ;
+;                                             ;       ;
+; Total combinational functions               ; 271   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 183   ;
+;     -- 3 input functions                    ; 58    ;
+;     -- <=2 input functions                  ; 30    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 271   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 18    ;
+;     -- Dedicated logic registers            ; 18    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 75    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out                             ; 18    ;
+; Total fan-out                               ; 1066  ;
+; Average fan-out                             ; 2.93  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -270,109 +263,109 @@ applicable agreement for further details.
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |LAB2a                                                  ; 271 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |LAB2a                                                                                                              ; work         ;
-;    |Adder_2_2n:\converter:sum_m1|                       ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1                                                                                 ; work         ;
-;       |fulladder:\cpa_1:0:cpa_1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:0:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:1:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:1:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:2:cpa_1|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:2:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:3:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:3:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:4:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:4:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:5:cpa_1|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:5:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:6:cpa_1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:6:cpa_1                                                        ; work         ;
-;       |fulladder:\cpa_1:7:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:7:cpa_1                                                        ; work         ;
-;    |Adder_2_n_neg1:\converter:sum_m2|                   ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2                                                                             ; work         ;
-;       |Mux2_1:MUX2_5|                                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|Mux2_1:MUX2_5                                                               ; work         ;
-;       |fulladder:\add_cpa_cycle1:1:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:1:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:2:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:2:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:3:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:3:cpa1                                            ; work         ;
-;       |fulladder:\f4:1:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\f4:1:sum1                                                        ; work         ;
-;       |fulladder:\f4:4:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\f4:4:sum1                                                        ; work         ;
-;    |Adder_2_n_pos1:\converter:sum_m3|                   ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3                                                                             ; work         ;
-;       |Mux2_1:MUX2_5|                                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|Mux2_1:MUX2_5                                                               ; work         ;
-;       |fulladder:\add_cpa_cycle1:0:cpa1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:0:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:1:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:1:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:2:cpa1|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:2:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:3:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:3:cpa1                                            ; work         ;
-;       |fulladder:\add_cpa_cycle1:4:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:4:cpa1                                            ; work         ;
-;       |fulladder:\f4:1:sum1|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:1:sum1                                                        ; work         ;
-;       |fulladder:\f4:2:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:2:sum1                                                        ; work         ;
-;       |fulladder:\f4:5:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:5:sum1                                                        ; work         ;
-;    |ButtonSync:\converter:sync_btn|                     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|ButtonSync:\converter:sync_btn                                                                               ; work         ;
-;    |D_16FF:\converter:Reg16|                            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|D_16FF:\converter:Reg16                                                                                      ; work         ;
-;    |Decod7seg:\converter:comp_disp1|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp1                                                                              ; work         ;
-;    |Decod7seg:\converter:comp_disp2|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp2                                                                              ; work         ;
-;    |Decod7seg:\converter:comp_disp3|                    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp3                                                                              ; work         ;
-;    |Decod7seg:\converter:comp_disp4|                    ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp4                                                                              ; work         ;
-;    |traditionalSystem_BinToRNS:\converter:comp_binRNSW| ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW                                                           ; work         ;
-;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_m1                        ; work         ;
-;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_p1                        ; work         ;
-;    |traditionalSystem_BinToRNS:\converter:comp_binRNSX| ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX                                                           ; work         ;
-;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1                        ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:0:add ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ; work         ;
-;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1                        ; work         ;
-;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1                        ; work         ;
-;    |traditionalSystem_RNStoBin:\converter:comp_RNSbin|  ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin                                                            ; work         ;
-;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1                         ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add  ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add  ; work         ;
-;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add  ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add  ; work         ;
-;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:5:add  ; work         ;
-;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:7:add  ; work         ;
-;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1                         ; work         ;
-;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add  ; work         ;
-;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add  ; work         ;
-;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add  ; work         ;
-;          |fulladder:\ciclo:4:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:4:add  ; work         ;
-;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:5:add  ; work         ;
-;          |fulladder:\ciclo:6:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:6:add  ; work         ;
-;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:7:add  ; work         ;
-;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1                         ; work         ;
+; |LAB2a                                                  ; 271 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |LAB2a                                                                                                              ;              ;
+;    |Adder_2_2n:\converter:sum_m1|                       ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1                                                                                 ;              ;
+;       |fulladder:\cpa_1:0:cpa_1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:0:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:1:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:1:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:2:cpa_1|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:2:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:3:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:3:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:4:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:4:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:5:cpa_1|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:5:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:6:cpa_1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:6:cpa_1                                                        ;              ;
+;       |fulladder:\cpa_1:7:cpa_1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_2n:\converter:sum_m1|fulladder:\cpa_1:7:cpa_1                                                        ;              ;
+;    |Adder_2_n_neg1:\converter:sum_m2|                   ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2                                                                             ;              ;
+;       |Mux2_1:MUX2_5|                                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|Mux2_1:MUX2_5                                                               ;              ;
+;       |fulladder:\add_cpa_cycle1:1:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:1:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:2:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:2:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:3:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\add_cpa_cycle1:3:cpa1                                            ;              ;
+;       |fulladder:\f4:1:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\f4:1:sum1                                                        ;              ;
+;       |fulladder:\f4:4:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_neg1:\converter:sum_m2|fulladder:\f4:4:sum1                                                        ;              ;
+;    |Adder_2_n_pos1:\converter:sum_m3|                   ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3                                                                             ;              ;
+;       |Mux2_1:MUX2_5|                                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|Mux2_1:MUX2_5                                                               ;              ;
+;       |fulladder:\add_cpa_cycle1:0:cpa1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:0:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:1:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:1:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:2:cpa1|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:2:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:3:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:3:cpa1                                            ;              ;
+;       |fulladder:\add_cpa_cycle1:4:cpa1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\add_cpa_cycle1:4:cpa1                                            ;              ;
+;       |fulladder:\f4:1:sum1|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:1:sum1                                                        ;              ;
+;       |fulladder:\f4:2:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:2:sum1                                                        ;              ;
+;       |fulladder:\f4:5:sum1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Adder_2_n_pos1:\converter:sum_m3|fulladder:\f4:5:sum1                                                        ;              ;
+;    |ButtonSync:\converter:sync_btn|                     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|ButtonSync:\converter:sync_btn                                                                               ;              ;
+;    |D_16FF:\converter:Reg16|                            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|D_16FF:\converter:Reg16                                                                                      ;              ;
+;    |Decod7seg:\converter:comp_disp1|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp1                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp2|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp2                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp3|                    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp3                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp4|                    ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|Decod7seg:\converter:comp_disp4                                                                              ;              ;
+;    |traditionalSystem_BinToRNS:\converter:comp_binRNSW| ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW                                                           ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1                        ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_m1                        ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_p1                        ;              ;
+;    |traditionalSystem_BinToRNS:\converter:comp_binRNSX| ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX                                                           ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1                        ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1                        ;              ;
+;    |traditionalSystem_RNStoBin:\converter:comp_RNSbin|  ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin                                                            ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1                         ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add  ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add  ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add  ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add  ;              ;
+;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:5:add  ;              ;
+;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:7:add  ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1                         ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add  ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add  ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add  ;              ;
+;          |fulladder:\ciclo:4:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:4:add  ;              ;
+;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:5:add  ;              ;
+;          |fulladder:\ciclo:6:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:6:add  ;              ;
+;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:7:add  ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB2a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1                         ;              ;
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -430,13 +423,13 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------+--------------------+
 ; Register name                                          ; Reason for Removal ;
 +--------------------------------------------------------+--------------------+
-; ButtonSync:\converter:sync_btn|btn3state.SaidaAtiva    ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn3state.EsperaSoltar  ; Lost fanout        ;
-; ButtonSync:\converter:sync_btn|btn3state.EsperaApertar ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn2state.SaidaAtiva    ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn2state.EsperaSoltar  ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn2state.EsperaApertar ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn1state.SaidaAtiva    ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn1state.EsperaSoltar  ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn1state.EsperaApertar ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn0state.SaidaAtiva    ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn0state.EsperaSoltar  ; Lost fanout        ;
 ; ButtonSync:\converter:sync_btn|btn0state.EsperaApertar ; Lost fanout        ;
@@ -449,8 +442,8 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+--------------------+--------------------------------------------------------+
 ; Register name                                       ; Reason for Removal ; Registers Removed due to This Register                 ;
 +-----------------------------------------------------+--------------------+--------------------------------------------------------+
-; ButtonSync:\converter:sync_btn|btn3state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn3state.EsperaApertar ;
 ; ButtonSync:\converter:sync_btn|btn2state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn2state.EsperaApertar ;
+; ButtonSync:\converter:sync_btn|btn1state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn1state.EsperaApertar ;
 ; ButtonSync:\converter:sync_btn|btn0state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn0state.EsperaApertar ;
 +-----------------------------------------------------+--------------------+--------------------------------------------------------+
 
@@ -936,8 +929,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
+; btn1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; btn2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; btn3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -955,10 +948,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Sep 15 20:24:34 2019
+    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
+    Info: Processing started: Tue Sep 17 19:33:50 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB2a -c LAB2a
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file traditionalsystem_rnstobin.vhd
     Info (12022): Found design unit 1: traditionalSystem_RNStoBin-Structural
     Info (12023): Found entity 1: traditionalSystem_RNStoBin
@@ -1002,12 +995,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file d_16ff.
     Info (12022): Found design unit 1: D_16FF-behv
     Info (12023): Found entity 1: D_16FF
 Info (12127): Elaborating entity "LAB2a" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LAB2a.vhd(119): object "zeros" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at LAB2a.vhd(134): object "notSW" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at LAB2a.vhd(117): object "zeros" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at LAB2a.vhd(132): object "notSW" assigned a value but never read
+Warning (10873): Using initial value X (don't care) for net "LEDG[7..4]" at LAB2a.vhd(39)
 Info (12128): Elaborating entity "ButtonSync" for hierarchy "ButtonSync:\converter:sync_btn"
 Info (12128): Elaborating entity "D_16FF" for hierarchy "D_16FF:\converter:Reg16"
 Warning (10541): VHDL Signal Declaration warning at D_16FF.vhd(13): used implicit default value for signal "zeros" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at D_16FF.vhd(21): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at D_16FF.vhd(22): signal "zeros" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "traditionalSystem_BinToRNS" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX"
 Warning (10036): Verilog HDL or VHDL warning at traditionalSystem_BinToRNS.vhd(65): object "zeros" assigned a value but never read
@@ -1031,21 +1024,24 @@ Info (12128): Elaborating entity "CSA_2n_mp_1" for hierarchy "traditionalSystem_
 Warning (10036): Verilog HDL or VHDL warning at CSA_2n_mp_1.vhd(29): object "modo_b" assigned a value but never read
 Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1"
 Info (12128): Elaborating entity "Decod7seg" for hierarchy "Decod7seg:\converter:comp_disp1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY3"
-    Warning (15610): No output dependent on input pin "KEY2"
-    Warning (15610): No output dependent on input pin "KEY0"
-Info (21057): Implemented 353 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 45 output pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[16]"
+Info (21057): Implemented 362 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 53 output pins
     Info (21061): Implemented 287 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Sun Sep 15 20:24:39 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 490 megabytes
+    Info: Processing ended: Tue Sep 17 19:33:56 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -32,13 +32,11 @@ use work.fuctions.all;
 
 entity LAB2a is
 	generic (n : natural := 4);
-	 port(SW   : in STD_LOGIC_VECTOR(4*n-1 downto 0);
-			KEY3 : in STD_LOGIC;
-			KEY2 : in STD_LOGIC;
-			KEY1 : in STD_LOGIC;
-			KEY0 : in STD_LOGIC;
+	 port(SW   : in STD_LOGIC_VECTOR(4*n downto 0);
+			KEY : in STD_LOGIC_VECTOR(3 downto 0);
 			CLOCK_50: in STD_LOGIC;
 			LEDR : out STD_LOGIC_VECTOR(4*n downto 0);
+			LEDG : out STD_LOGIC_VECTOR(7 downto 0);
 			HEX3 : out STD_LOGIC_VECTOR(6 downto 0);
 			HEX2 : out STD_LOGIC_VECTOR(6 downto 0);
 			HEX1 : out STD_LOGIC_VECTOR(6 downto 0);
@@ -142,10 +140,10 @@ converter : block
 
 begin
 
-sync_btn: ButtonSync port map ( key0 => KEY0, key1 => KEY1, key2 => KEY2, key3 => KEY3, clk => CLOCK_50,
+sync_btn: ButtonSync port map ( key0 => KEY(0), key1 => KEY(1), key2 => KEY(2), key3 => KEY(3), clk => CLOCK_50,
 										btn0 => Btn(0), btn1 => Btn(1), btn2 => Btn(2), btn3 => Btn(3));
 
-Reg16: D_16FF port map ( CLK => CLOCK_50, RST => Btn(0), EN => Btn(1), D => SW(4*n-1 downto 0), Q => Reg16W(4*n-1 downto 0));
+Reg16: D_16FF port map ( CLK => CLOCK_50, RST => Btn(0), EN => Btn(3), D => SW(4*n-1 downto 0), Q => Reg16W(4*n-1 downto 0));
 
 comp_binRNSX: traditionalSystem_BinToRNS	generic map	(  n => n)
 	                       port map ( BinRNS_in => SW(4*n-1 downto 0), BinRNS_out => BinRNS_out_sigX);
@@ -173,7 +171,8 @@ comp_disp2: Decod7seg	port map ( C => RNSBin_out_sig(3*n-1 downto 2*n), F => HEX
 comp_disp3: Decod7seg	port map ( C => RNSBin_out_sig(2*n-1 downto n), F => HEX1); 
 comp_disp4: Decod7seg	port map ( C => RNSBin_out_sig(n-1 downto 0), F => HEX0); 
 
-LEDR <= SumModuli;
+LEDR(4*n downto 0) <= SumModuli(4*n downto 0);
+LEDG(3 downto 0) <= KEY(3 downto 0);
 
 end block;
 

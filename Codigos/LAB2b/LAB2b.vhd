@@ -42,27 +42,20 @@ end LAB2b;
 
 architecture Structural of LAB2b is
 
-	component CSA_2n_mp_1 is
-	generic (n : natural;
-				-- modo = 0 => 2^n-1
-				-- modo = 1 => 2^n+1
-				modo: NATURAL);
-  	 port(I0 : in STD_LOGIC_VECTOR((n-1) downto 0);
-			I1 : in STD_LOGIC_VECTOR((n-1) downto 0);
-			I2 : in STD_LOGIC_VECTOR((n-1) downto 0);
-			S : out STD_LOGIC_VECTOR((n-1) downto 0);
-			C : out STD_LOGIC_VECTOR((n-1) downto 0));
-		end component;
+	component CPA is
+	generic (n : natural :=4);
+	port (A: in std_logic_vector(n downto 0);
+	 B: in std_logic_vector(n downto 0);
+	 S: out std_logic_vector(n downto 0));
+	end component;
 
-  component adder_2n_mp_1 is 
-	generic (n : natural :=4;
-				-- modo = 0 => 2^n-1
-				-- modo = 1 => 2^n+1
-				modo: NATURAL := 0);
-  	 port(A : in STD_LOGIC_VECTOR((n-1) downto 0);
-			B : in STD_LOGIC_VECTOR((n-1) downto 0);
-			S : out STD_LOGIC_VECTOR((n-1) downto 0);
-			Cout: out STD_LOGIC);
+  component CSA is
+	generic (n : natural :=4);
+	port (A: in std_logic_vector(n downto 0);
+	 B: in std_logic_vector(n downto 0);
+	 Cin: in std_logic_vector(n downto 0);
+	 S: out std_logic_vector(n downto 0);
+	 C: out std_logic_vector(n downto 0));
 	end component;
 	
 	component mux21 is
@@ -98,14 +91,14 @@ converter : block
 
 begin
 
-cpa1: adder_2n_mp_1	generic map	(  n => n+1)
+cpa1: CPA	generic map	(  n => n)
 	                       port map ( A => SW(10 downto 6), B => SW(4 downto 0), S => cpa1_out);
 							
-csa1: CSA_2n_mp_1	generic map	(  n => n+2, modo => 0)
-	                       port map ( I0 => SW(11 downto 6), I1 => SW(5 downto 0), I2 => SW(17 downto 12),
+csa1: CSA	generic map	(  n => n+1)
+	                       port map ( A => SW(11 downto 6), B => SW(5 downto 0), Cin => SW(17 downto 12),
 								  S => cpa2_in2, C => cpa2_in1);
 
-cpa2: adder_2n_mp_1	generic map	(  n => n+2)
+cpa2: CPA	generic map	(  n => n+1)
 	                       port map ( A => cpa2_in1, B => cpa2_in2, S => cpa2_out);
 								  
 mux1: mux21	generic map	(  n => n)

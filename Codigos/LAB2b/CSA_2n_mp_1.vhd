@@ -43,6 +43,6 @@ ciclo : for i in 0 to (n-1) generate
 end generate;
 C((n-1) downto 1) <= c_intermed((n-1) downto 1);
 --C(0) <= c_intermed(n) xor modo_b;
-C(0) <= c_intermed(n) when modo = 0 else not(c_intermed(n));
+C(0) <= '0' when modo = 0 else not(c_intermed(n));
   		
 end Structural;

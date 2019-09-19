@@ -1,5 +1,5 @@
-Analysis & Synthesis Status : Successful - Sun Sep 15 20:24:39 2019
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Analysis & Synthesis Status : Successful - Tue Sep 17 19:33:56 2019
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Web Edition
 Revision Name : LAB2a
 Top-level Entity Name : LAB2a
 Family : Cyclone II
@@ -7,7 +7,7 @@ Total logic elements : 287
     Total combinational functions : 271
     Dedicated logic registers : 18
 Total registers : 18
-Total pins : 66
+Total pins : 75
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
