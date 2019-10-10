@@ -5,7 +5,7 @@ entity CPA is
 generic (n : natural :=4);
 port (A: in std_logic_vector(n downto 0);
  B: in std_logic_vector(n downto 0);
- S: out std_logic_vector(n downto 0));
+ S: out std_logic_vector(n+1 downto 0));
 end CPA;
 
 architecture circuito_logico of CPA is
@@ -30,5 +30,6 @@ cpa_j: 	fulladder port map( A => A(j), B => B(j), Cin => Cout(j),
  
 end generate cpa_1;
 
+S(n+1) <= Cout(n+1);
 
 end circuito_logico;
