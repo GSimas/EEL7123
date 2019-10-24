@@ -1,16 +1,16 @@
 library IEEE;
 use IEEE.Std_Logic_1164.all;
 
-entity CSA_trunc is
+entity CSA is
 generic (n : natural :=4);
 port (A: in std_logic_vector(n downto 0);
  B: in std_logic_vector(n downto 0);
  Cin: in std_logic_vector(n downto 0);
- S: out std_logic_vector(n downto 0);
- C: out std_logic_vector(n downto 0));
-end CSA_trunc;
+ S: out std_logic_vector(n+1 downto 0);
+ C: out std_logic_vector(n+1 downto 0));
+end CSA;
 
-architecture circuito_logico of CSA_trunc is
+architecture circuito_logico of CSA is
 
 signal Cout, S_sig: std_logic_vector(n+1 downto 0);
 
@@ -32,7 +32,8 @@ CSA_j: 	fulladder port map( A => A(j), B => B(j), Cin => Cin(j),
  
 end generate CSA_1;
 
-C <= Cout(n downto 0);
-S <= S_sig(n downto 0);
+C <= Cout(n+1 downto 0);
+S_sig(n+1) <= '0';
+S <= S_sig;
 
 end circuito_logico;

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 23 19:24:49 2019
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Web Edition
+Revision Name : cap10
+Top-level Entity Name : cap10
+Family : Cyclone II
+Total logic elements : 138
+    Total combinational functions : 138
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 32
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

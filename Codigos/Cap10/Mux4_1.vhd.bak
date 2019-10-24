@@ -3,12 +3,11 @@ use IEEE.std_logic_1164.all;
 
 entity Mux4_1 is
 
-generic(n :natural:=15);
+generic(n :natural:=16);
 
  port(
  
-     A,B,C,D: in STD_LOGIC_VECTOR(n downto 0);
-	  Z: out STD_LOGIC_VECTOR(n downto 0);
+     A,B,C,D,Z : in STD_LOGIC_VECTOR(n-1 downto 0);
      S0,S1: in STD_LOGIC
   );
 end Mux4_1;
