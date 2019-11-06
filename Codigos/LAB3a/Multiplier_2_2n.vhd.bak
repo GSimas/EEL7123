@@ -10,7 +10,7 @@ entity Multiplier_2_2n is
 	generic(n : natural := 5 );
 	 port(a : in STD_LOGIC_VECTOR((2*n-1) downto 0);
 			b : in STD_LOGIC_VECTOR((2*n-1) downto 0);
-		   s : out STD_LOGIC_VECTOR(2*n-1 downto 0));
+		   LEDR : out STD_LOGIC_VECTOR(2*n-1 downto 0));
 end Multiplier_2_2n;
 
 architecture structural of Multiplier_2_2n is 
@@ -56,6 +56,6 @@ end generate F19;
 SUM: MatrixModAdd_2_2n generic map(etapas => 2*n, n => 2*n)
 						port map( GT => PPP(4*n*(n)-1 downto 0), x_rns0a => f_rns(2*n-1 downto 0));
 
-s(2*n-1 downto 0) <= f_rns(2*n-1 downto 0);
+LEDR(2*n-1 downto 0) <= f_rns(2*n-1 downto 0);
 
 end structural;

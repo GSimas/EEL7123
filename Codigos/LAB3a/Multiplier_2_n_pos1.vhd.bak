@@ -7,7 +7,7 @@ entity Multiplier_2_n_pos1 is
 	generic(n : natural := 4 );
 	 port(a : in STD_LOGIC_VECTOR(n downto 0);
 			b : in STD_LOGIC_VECTOR(n downto 0);
-			s : out STD_LOGIC_VECTOR(n downto 0));
+			LEDR : out STD_LOGIC_VECTOR(n downto 0));
 end Multiplier_2_n_pos1;
 
 architecture structural of Multiplier_2_n_pos1 is 
@@ -66,6 +66,6 @@ end generate F19;
 SUM: MatrixModAdd_2_n_pos1 generic map(etapas => n+3, n => 4)
 		port map( GT => PPP(n*n+3*n-1 downto 0), x_rns0a => f_rns((n) downto 0));
 
-s((n) downto 0) <= f_rns((n) downto 0);
+LEDR((n) downto 0) <= f_rns((n) downto 0);
 
 end structural;

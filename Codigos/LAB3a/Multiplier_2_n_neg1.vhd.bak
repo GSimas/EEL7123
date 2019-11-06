@@ -10,7 +10,7 @@ entity Multiplier_2_n_neg1 is
 	generic(n : natural := 5 );
 	 port(a : in STD_LOGIC_VECTOR(n-1 downto 0);
 			b : in STD_LOGIC_VECTOR(n-1 downto 0);
-			s : out STD_LOGIC_VECTOR(n-1 downto 0));
+			LEDR : out STD_LOGIC_VECTOR(n-1 downto 0));
 end Multiplier_2_n_neg1;
 
 architecture structural of Multiplier_2_n_neg1 is 
@@ -56,6 +56,6 @@ end generate F19;
 SUM: MatrixModAdd_2_n_neg1 generic map(etapas => n, n => n)
 		port map( GT => PPP(n*(n)-1 downto 0), x_rns0a => f_rns((n)-1 downto 0));
 
-s((n)-1 downto 0) <= f_rns((n)-1 downto 0);
+LEDR((n)-1 downto 0) <= f_rns((n)-1 downto 0);
 
 end structural;

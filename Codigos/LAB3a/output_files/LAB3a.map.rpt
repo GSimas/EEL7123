@@ -1,0 +1,1431 @@
+Analysis & Synthesis report for LAB3a
+Tue Nov 05 19:17:00 2019
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn3state
+  9. State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn2state
+ 10. State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn1state
+ 11. State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn0state
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |LAB3a
+ 16. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX
+ 17. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1
+ 18. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1
+ 19. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1
+ 20. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1
+ 21. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1
+ 22. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1
+ 23. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1
+ 24. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW
+ 25. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1
+ 26. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1
+ 27. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_m1
+ 28. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1
+ 29. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1
+ 30. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1
+ 31. Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_p1
+ 32. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1
+ 33. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:1:h
+ 34. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:2:h
+ 35. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:3:h
+ 36. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:4:h
+ 37. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:5:h
+ 38. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:6:h
+ 39. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:7:h
+ 40. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:8:h
+ 41. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM
+ 42. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:cp0
+ 43. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:1:cp1
+ 44. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:2:cp1
+ 45. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:3:cp1
+ 46. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:4:cp1
+ 47. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:5:cp1
+ 48. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:6:cp1
+ 49. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:7:cp1
+ 50. Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder
+ 51. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2
+ 52. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:1:h
+ 53. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:2:h
+ 54. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:3:h
+ 55. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:4:h
+ 56. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM
+ 57. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:cp0
+ 58. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:1:cp1
+ 59. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:2:cp1
+ 60. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:3:cp1
+ 61. Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder
+ 62. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3
+ 63. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:1:h
+ 64. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:2:h
+ 65. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:3:h
+ 66. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:4:h
+ 67. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM
+ 68. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:cp0
+ 69. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:1:cp1
+ 70. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:2:cp1
+ 71. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:3:cp1
+ 72. Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|mod_adder_pref:MAdder
+ 73. Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin
+ 74. Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1
+ 75. Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1
+ 76. Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1
+ 77. Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1"
+ 78. Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1"
+ 79. Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1"
+ 80. Port Connectivity Checks: "Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM"
+ 81. Port Connectivity Checks: "Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder"
+ 82. Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder"
+ 83. Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:7:cp1"
+ 84. Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:cp0"
+ 85. Port Connectivity Checks: "traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1"
+ 86. Port Connectivity Checks: "traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1"
+ 87. Port Connectivity Checks: "ButtonSync:\converter:sync_btn"
+ 88. Elapsed Time Per Partition
+ 89. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 05 19:17:00 2019    ;
+; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
+; Revision Name                      ; LAB3a                                    ;
+; Top-level Entity Name              ; LAB3a                                    ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 430                                      ;
+;     Total combinational functions  ; 414                                      ;
+;     Dedicated logic registers      ; 18                                       ;
+; Total registers                    ; 18                                       ;
+; Total pins                         ; 75                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; LAB3a              ; LAB3a              ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; traditionalSystem_RNStoBin.vhd   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/traditionalSystem_RNStoBin.vhd ;         ;
+; traditionalSystem_BinToRNS.vhd   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/traditionalSystem_BinToRNS.vhd ;         ;
+; ButtonSync.vhd                   ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/ButtonSync.vhd                 ;         ;
+; rotate_l_2_n_pos1.vhd            ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/rotate_l_2_n_pos1.vhd          ;         ;
+; rotate_l_2_n_neg1.vhd            ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/rotate_l_2_n_neg1.vhd          ;         ;
+; rotate_l_2_2n.vhd                ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/rotate_l_2_2n.vhd              ;         ;
+; Multiplier_2_n_pos1.vhd          ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/Multiplier_2_n_pos1.vhd        ;         ;
+; Multiplier_2_n_neg1.vhd          ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/Multiplier_2_n_neg1.vhd        ;         ;
+; Multiplier_2_2n.vhd              ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/Multiplier_2_2n.vhd            ;         ;
+; mod_adder_pref_2_2n.vhd          ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/mod_adder_pref_2_2n.vhd        ;         ;
+; mod_adder_pref.vhd               ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/mod_adder_pref.vhd             ;         ;
+; MatrixModAdd_2_n_pos1.vhd        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/MatrixModAdd_2_n_pos1.vhd      ;         ;
+; MatrixModAdd_2_n_neg1.vhd        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/MatrixModAdd_2_n_neg1.vhd      ;         ;
+; MatrixModAdd_2_2n.vhd            ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/MatrixModAdd_2_2n.vhd          ;         ;
+; fulladder.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/fulladder.vhd                  ;         ;
+; fuctions.vhd                     ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/fuctions.vhd                   ;         ;
+; Decod7seg.vhd                    ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/Decod7seg.vhd                  ;         ;
+; D_16FF.vhd                       ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/D_16FF.vhd                     ;         ;
+; CSA_2n_mp_1.vhd                  ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/CSA_2n_mp_1.vhd                ;         ;
+; Comp_m_2.vhd                     ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/Comp_m_2.vhd                   ;         ;
+; adder_2n_mp_1.vhd                ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/adder_2n_mp_1.vhd              ;         ;
+; LAB3a.vhd                        ; yes             ; User VHDL File  ; C:/Users/06772586905/Downloads/EEL7123-master/EEL7123-master/Codigos/Lab3a/LAB3a.vhd                      ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 430   ;
+;                                             ;       ;
+; Total combinational functions               ; 414   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 291   ;
+;     -- 3 input functions                    ; 70    ;
+;     -- <=2 input functions                  ; 53    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 414   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 18    ;
+;     -- Dedicated logic registers            ; 18    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 75    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out                             ; 20    ;
+; Total fan-out                               ; 1580  ;
+; Average fan-out                             ; 3.12  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+; |LAB3a                                                  ; 414 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |LAB3a                                                                                                              ;              ;
+;    |ButtonSync:\converter:sync_btn|                     ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|ButtonSync:\converter:sync_btn                                                                               ;              ;
+;    |D_16FF:\converter:Reg16|                            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|D_16FF:\converter:Reg16                                                                                      ;              ;
+;    |Decod7seg:\converter:comp_disp1|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Decod7seg:\converter:comp_disp1                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp2|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Decod7seg:\converter:comp_disp2                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp3|                    ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Decod7seg:\converter:comp_disp3                                                                              ;              ;
+;    |Decod7seg:\converter:comp_disp4|                    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Decod7seg:\converter:comp_disp4                                                                              ;              ;
+;    |Multiplier_2_2n:\converter:mult_m1|                 ; 68 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1                                                                           ;              ;
+;       |MatrixModAdd_2_2n:SUM|                           ; 51 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM                                                     ;              ;
+;          |Comp_m_2:\f1:1:cp1|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:1:cp1                                  ;              ;
+;          |Comp_m_2:\f1:2:cp1|                           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:2:cp1                                  ;              ;
+;          |Comp_m_2:\f1:3:cp1|                           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:3:cp1                                  ;              ;
+;          |Comp_m_2:\f1:4:cp1|                           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:4:cp1                                  ;              ;
+;          |Comp_m_2:\f1:5:cp1|                           ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:5:cp1                                  ;              ;
+;          |Comp_m_2:\f1:6:cp1|                           ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:6:cp1                                  ;              ;
+;          |mod_adder_pref_2_2n:MAdder|                   ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder                          ;              ;
+;    |Multiplier_2_n_neg1:\converter:mult_m2|             ; 40 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2                                                                       ;              ;
+;       |MatrixModAdd_2_n_neg1:SUM|                       ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM                                             ;              ;
+;          |Comp_m_2:\f1:1:cp1|                           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:1:cp1                          ;              ;
+;          |Comp_m_2:\f1:2:cp1|                           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:2:cp1                          ;              ;
+;          |Comp_m_2:\f1:3:cp1|                           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:3:cp1                          ;              ;
+;          |Comp_m_2:cp0|                                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:cp0                                ;              ;
+;          |mod_adder_pref:MAdder|                        ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder                       ;              ;
+;    |Multiplier_2_n_pos1:\converter:mult_m3|             ; 70 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3                                                                       ;              ;
+;       |MatrixModAdd_2_n_pos1:SUM|                       ; 57 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM                                             ;              ;
+;          |Comp_m_2:\f1:1:cp1|                           ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:1:cp1                          ;              ;
+;          |Comp_m_2:\f1:2:cp1|                           ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:2:cp1                          ;              ;
+;          |Comp_m_2:\f1:3:cp1|                           ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:3:cp1                          ;              ;
+;          |Comp_m_2:cp0|                                 ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:cp0                                ;              ;
+;          |mod_adder_pref:MAdder|                        ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|mod_adder_pref:MAdder                       ;              ;
+;    |traditionalSystem_BinToRNS:\converter:comp_binRNSW| ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW                                                           ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_m1                        ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_p1                        ;              ;
+;    |traditionalSystem_BinToRNS:\converter:comp_binRNSX| ; 68 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX                                                           ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_p1|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:2:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |CSA_2n_mp_1:\converter:comp2_2n_p1|              ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1                        ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:0:add ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:1:add ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1|fulladder:\ciclo:3:add ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1                        ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_p1|              ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1                        ;              ;
+;    |traditionalSystem_RNStoBin:\converter:comp_RNSbin|  ; 69 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin                                                            ;              ;
+;       |CSA_2n_mp_1:\converter:comp0_2n_m1|              ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1                         ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add  ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:1:add  ;              ;
+;          |fulladder:\ciclo:2:add|                       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:2:add  ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:3:add  ;              ;
+;          |fulladder:\ciclo:4:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:4:add  ;              ;
+;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:5:add  ;              ;
+;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:7:add  ;              ;
+;       |CSA_2n_mp_1:\converter:comp1_2n_m1|              ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1                         ;              ;
+;          |fulladder:\ciclo:0:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:0:add  ;              ;
+;          |fulladder:\ciclo:1:add|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:1:add  ;              ;
+;          |fulladder:\ciclo:3:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:3:add  ;              ;
+;          |fulladder:\ciclo:4:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:4:add  ;              ;
+;          |fulladder:\ciclo:5:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:5:add  ;              ;
+;          |fulladder:\ciclo:6:add|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:6:add  ;              ;
+;          |fulladder:\ciclo:7:add|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1|fulladder:\ciclo:7:add  ;              ;
+;       |adder_2n_mp_1:\converter:add_2n_m1|              ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LAB3a|traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1                         ;              ;
++---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn3state                                   ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn3state.EsperaSoltar ; btn3state.SaidaAtiva ; btn3state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn3state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn3state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn3state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn2state                                   ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn2state.EsperaSoltar ; btn2state.SaidaAtiva ; btn2state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn2state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn2state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn2state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn1state                                   ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn1state.EsperaSoltar ; btn1state.SaidaAtiva ; btn1state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn1state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn1state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn1state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |LAB3a|ButtonSync:\converter:sync_btn|btn0state                                   ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn0state.EsperaSoltar ; btn0state.SaidaAtiva ; btn0state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn0state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn0state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn0state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                          ;
++--------------------------------------------------------+--------------------+
+; Register name                                          ; Reason for Removal ;
++--------------------------------------------------------+--------------------+
+; ButtonSync:\converter:sync_btn|btn3state.EsperaSoltar  ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn2state.SaidaAtiva    ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn2state.EsperaSoltar  ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn2state.EsperaApertar ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn1state.SaidaAtiva    ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn1state.EsperaSoltar  ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn1state.EsperaApertar ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn0state.SaidaAtiva    ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn0state.EsperaSoltar  ; Lost fanout        ;
+; ButtonSync:\converter:sync_btn|btn0state.EsperaApertar ; Lost fanout        ;
+; Total Number of Removed Registers = 10                 ;                    ;
++--------------------------------------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                       ;
++-----------------------------------------------------+--------------------+--------------------------------------------------------+
+; Register name                                       ; Reason for Removal ; Registers Removed due to This Register                 ;
++-----------------------------------------------------+--------------------+--------------------------------------------------------+
+; ButtonSync:\converter:sync_btn|btn2state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn2state.EsperaApertar ;
+; ButtonSync:\converter:sync_btn|btn1state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn1state.EsperaApertar ;
+; ButtonSync:\converter:sync_btn|btn0state.SaidaAtiva ; Lost Fanouts       ; ButtonSync:\converter:sync_btn|btn0state.EsperaApertar ;
++-----------------------------------------------------+--------------------+--------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 18    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |LAB3a ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp1_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_m1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 0     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp0_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp1_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|CSA_2n_mp_1:\converter:comp2_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_BinToRNS:\converter:comp_binRNSW|adder_2n_mp_1:\converter:add_2n_p1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                            ;
+; modo           ; 1     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:1:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 0     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:2:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 1     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:3:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 2     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:4:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 3     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:5:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 4     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:6:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 5     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:7:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 6     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:8:h ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                ;
+; j              ; 7     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; etapas         ; 8     ; Signed Integer                                                               ;
+; n              ; 8     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:cp0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:1:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:2:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:3:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:4:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:5:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:6:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:7:cp1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                          ;
+; modo           ; 0     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:1:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 0     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:2:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 1     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:3:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 2     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:4:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 3     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; etapas         ; 4     ; Signed Integer                                                                       ;
+; n              ; 4     ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:cp0 ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:1:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:2:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:\f1:3:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                             ;
+; modo           ; 0     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:1:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 1     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:2:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 2     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:3:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 3     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:4:h ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                        ;
+; j              ; 4     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; etapas         ; 7     ; Signed Integer                                                                       ;
+; n              ; 4     ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:cp0 ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; n              ; 7     ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:1:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 7     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:2:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 7     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:\f1:3:cp1 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 7     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|mod_adder_pref:MAdder ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                                             ;
+; modo           ; 1     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                           ;
+; modo           ; 0     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                           ;
+; modo           ; 0     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                           ;
+; modo           ; 0     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1" ;
++------+--------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                               ;
++------+--------+----------+---------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.   ;
++------+--------+----------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp1_2n_m1" ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+; i2[2..0] ; Input ; Info     ; Stuck at VCC                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1" ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+; i2[6..4] ; Input ; Info     ; Stuck at GND                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM" ;
++--------+-------+----------+------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                          ;
++--------+-------+----------+------------------------------------------------------------------+
+; gt[27] ; Input ; Info     ; Stuck at GND                                                     ;
+; gt[20] ; Input ; Info     ; Stuck at VCC                                                     ;
+; gt[13] ; Input ; Info     ; Stuck at GND                                                     ;
++--------+-------+----------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder" ;
++------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                 ;
++------+--------+----------+-----------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder" ;
++------+--------+----------+--------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                              ;
++------+--------+----------+--------------------------------------------------------------------------------------+
+; b[0] ; Input  ; Info     ; Stuck at GND                                                                         ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.  ;
++------+--------+----------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:\f1:7:cp1"        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:cp0" ;
++------+-------+----------+-------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                 ;
++------+-------+----------+-------------------------------------------------------------------------+
+; ci   ; Input ; Info     ; Stuck at GND                                                            ;
++------+-------+----------+-------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp2_2n_p1" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; i0   ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1" ;
++------+--------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                ;
++------+--------+----------+----------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.    ;
++------+--------+----------+----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ButtonSync:\converter:sync_btn"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; btn1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; btn2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
+    Info: Processing started: Tue Nov 05 19:16:54 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB3a -c LAB3a
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file traditionalsystem_rnstobin.vhd
+    Info (12022): Found design unit 1: traditionalSystem_RNStoBin-Structural
+    Info (12023): Found entity 1: traditionalSystem_RNStoBin
+Info (12021): Found 2 design units, including 1 entities, in source file traditionalsystem_bintorns.vhd
+    Info (12022): Found design unit 1: traditionalSystem_BinToRNS-Structural
+    Info (12023): Found entity 1: traditionalSystem_BinToRNS
+Info (12021): Found 2 design units, including 1 entities, in source file buttonsync.vhd
+    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
+    Info (12023): Found entity 1: ButtonSync
+Info (12021): Found 2 design units, including 1 entities, in source file rotate_l_2_n_pos1.vhd
+    Info (12022): Found design unit 1: rotate_l_2_n_pos1-rtl
+    Info (12023): Found entity 1: rotate_l_2_n_pos1
+Info (12021): Found 2 design units, including 1 entities, in source file rotate_l_2_n_neg1.vhd
+    Info (12022): Found design unit 1: rotate_l_2_n_neg1-rtl
+    Info (12023): Found entity 1: rotate_l_2_n_neg1
+Info (12021): Found 2 design units, including 1 entities, in source file rotate_l_2_2n.vhd
+    Info (12022): Found design unit 1: rotate_l_2_2n-rtl
+    Info (12023): Found entity 1: rotate_l_2_2n
+Info (12021): Found 2 design units, including 1 entities, in source file mux4_1.vhd
+    Info (12022): Found design unit 1: Mux4_1-Mux
+    Info (12023): Found entity 1: Mux4_1
+Info (12021): Found 2 design units, including 1 entities, in source file mux2_1.vhd
+    Info (12022): Found design unit 1: Mux2_1-mux2
+    Info (12023): Found entity 1: Mux2_1
+Info (12021): Found 2 design units, including 1 entities, in source file multiplier_2_n_pos1.vhd
+    Info (12022): Found design unit 1: Multiplier_2_n_pos1-structural
+    Info (12023): Found entity 1: Multiplier_2_n_pos1
+Info (12021): Found 2 design units, including 1 entities, in source file multiplier_2_n_neg1.vhd
+    Info (12022): Found design unit 1: Multiplier_2_n_neg1-structural
+    Info (12023): Found entity 1: Multiplier_2_n_neg1
+Info (12021): Found 2 design units, including 1 entities, in source file multiplier_2_2n.vhd
+    Info (12022): Found design unit 1: Multiplier_2_2n-structural
+    Info (12023): Found entity 1: Multiplier_2_2n
+Info (12021): Found 2 design units, including 1 entities, in source file mod_adder_pref_2_2n.vhd
+    Info (12022): Found design unit 1: mod_adder_pref_2_2n-mod_adder_pref_arch
+    Info (12023): Found entity 1: mod_adder_pref_2_2n
+Info (12021): Found 2 design units, including 1 entities, in source file mod_adder_pref.vhd
+    Info (12022): Found design unit 1: mod_adder_pref-mod_adder_pref_arch
+    Info (12023): Found entity 1: mod_adder_pref
+Info (12021): Found 2 design units, including 1 entities, in source file matrixmodadd_2_n_pos1.vhd
+    Info (12022): Found design unit 1: MatrixModAdd_2_n_pos1-MatrixModAdd
+    Info (12023): Found entity 1: MatrixModAdd_2_n_pos1
+Info (12021): Found 2 design units, including 1 entities, in source file matrixmodadd_2_n_neg1.vhd
+    Info (12022): Found design unit 1: MatrixModAdd_2_n_neg1-MatrixModAdd
+    Info (12023): Found entity 1: MatrixModAdd_2_n_neg1
+Info (12021): Found 2 design units, including 1 entities, in source file matrixmodadd_2_2n.vhd
+    Info (12022): Found design unit 1: MatrixModAdd_2_2n-MatrixModAdd
+    Info (12023): Found entity 1: MatrixModAdd_2_2n
+Info (12021): Found 2 design units, including 1 entities, in source file ksadder.vhd
+    Info (12022): Found design unit 1: KSadder-structural
+    Info (12023): Found entity 1: KSadder
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
+    Info (12022): Found design unit 1: fulladder-structural
+    Info (12023): Found entity 1: fulladder
+Info (12021): Found 2 design units, including 0 entities, in source file fuctions.vhd
+    Info (12022): Found design unit 1: fuctions
+    Info (12022): Found design unit 2: fuctions-body
+Info (12021): Found 2 design units, including 1 entities, in source file decod7seg.vhd
+    Info (12022): Found design unit 1: Decod7seg-decod_bhv
+    Info (12023): Found entity 1: Decod7seg
+Info (12021): Found 2 design units, including 1 entities, in source file d_16ff.vhd
+    Info (12022): Found design unit 1: D_16FF-behv
+    Info (12023): Found entity 1: D_16FF
+Info (12021): Found 2 design units, including 1 entities, in source file csa_2n_mp_1.vhd
+    Info (12022): Found design unit 1: CSA_2n_mp_1-Structural
+    Info (12023): Found entity 1: CSA_2n_mp_1
+Info (12021): Found 2 design units, including 1 entities, in source file comp_m_2.vhd
+    Info (12022): Found design unit 1: Comp_m_2-Comp_m_2_arch
+    Info (12023): Found entity 1: Comp_m_2
+Info (12021): Found 2 design units, including 1 entities, in source file adder_2n_mp_1.vhd
+    Info (12022): Found design unit 1: adder_2n_mp_1-Structural
+    Info (12023): Found entity 1: adder_2n_mp_1
+Info (12021): Found 2 design units, including 1 entities, in source file lab3a.vhd
+    Info (12022): Found design unit 1: LAB3a-Structural
+    Info (12023): Found entity 1: LAB3a
+Info (12127): Elaborating entity "LAB3a" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at LAB3a.vhd(115): object "zeros" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at LAB3a.vhd(130): object "notSW" assigned a value but never read
+Warning (10873): Using initial value X (don't care) for net "LEDG[7..4]" at LAB3a.vhd(39)
+Info (12128): Elaborating entity "ButtonSync" for hierarchy "ButtonSync:\converter:sync_btn"
+Info (12128): Elaborating entity "D_16FF" for hierarchy "D_16FF:\converter:Reg16"
+Warning (10541): VHDL Signal Declaration warning at D_16FF.vhd(13): used implicit default value for signal "zeros" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at D_16FF.vhd(22): signal "zeros" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "traditionalSystem_BinToRNS" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX"
+Warning (10036): Verilog HDL or VHDL warning at traditionalSystem_BinToRNS.vhd(65): object "zeros" assigned a value but never read
+Info (12128): Elaborating entity "CSA_2n_mp_1" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1"
+Warning (10036): Verilog HDL or VHDL warning at CSA_2n_mp_1.vhd(29): object "modo_b" assigned a value but never read
+Info (12128): Elaborating entity "fulladder" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_m1|fulladder:\ciclo:0:add"
+Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_m1"
+Info (12128): Elaborating entity "CSA_2n_mp_1" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX|CSA_2n_mp_1:\converter:comp0_2n_p1"
+Warning (10036): Verilog HDL or VHDL warning at CSA_2n_mp_1.vhd(29): object "modo_b" assigned a value but never read
+Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "traditionalSystem_BinToRNS:\converter:comp_binRNSX|adder_2n_mp_1:\converter:add_2n_p1"
+Info (12128): Elaborating entity "Multiplier_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:1:h"
+Warning (10445): VHDL Subtype or Type Declaration warning at rotate_l_2_2n.vhd(17): subtype or type has null range
+Warning (10296): VHDL warning at rotate_l_2_2n.vhd(17): ignored assignment of value to null range
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:2:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:3:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:4:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:5:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:6:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:7:h"
+Info (12128): Elaborating entity "rotate_l_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|rotate_l_2_2n:\generate_products_2:8:h"
+Info (12128): Elaborating entity "MatrixModAdd_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM"
+Info (12128): Elaborating entity "Comp_m_2" for hierarchy "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|Comp_m_2:cp0"
+Info (12128): Elaborating entity "mod_adder_pref_2_2n" for hierarchy "Multiplier_2_2n:\converter:mult_m1|MatrixModAdd_2_2n:SUM|mod_adder_pref_2_2n:MAdder"
+Warning (10036): Verilog HDL or VHDL warning at mod_adder_pref_2_2n.vhd(43): object "modo_b" assigned a value but never read
+Info (12128): Elaborating entity "Multiplier_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2"
+Info (12128): Elaborating entity "rotate_l_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:1:h"
+Warning (10445): VHDL Subtype or Type Declaration warning at rotate_l_2_n_neg1.vhd(17): subtype or type has null range
+Warning (10296): VHDL warning at rotate_l_2_n_neg1.vhd(17): ignored assignment of value to null range
+Info (12128): Elaborating entity "rotate_l_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:2:h"
+Info (12128): Elaborating entity "rotate_l_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:3:h"
+Info (12128): Elaborating entity "rotate_l_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|rotate_l_2_n_neg1:\generate_products_2:4:h"
+Info (12128): Elaborating entity "MatrixModAdd_2_n_neg1" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM"
+Info (12128): Elaborating entity "Comp_m_2" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|Comp_m_2:cp0"
+Info (12128): Elaborating entity "mod_adder_pref" for hierarchy "Multiplier_2_n_neg1:\converter:mult_m2|MatrixModAdd_2_n_neg1:SUM|mod_adder_pref:MAdder"
+Info (12128): Elaborating entity "Multiplier_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3"
+Info (12128): Elaborating entity "rotate_l_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:1:h"
+Info (12128): Elaborating entity "rotate_l_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:2:h"
+Info (12128): Elaborating entity "rotate_l_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:3:h"
+Info (12128): Elaborating entity "rotate_l_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|rotate_l_2_n_pos1:\generate_products_2:4:h"
+Warning (10445): VHDL Subtype or Type Declaration warning at rotate_l_2_n_pos1.vhd(19): subtype or type has null range
+Warning (10296): VHDL warning at rotate_l_2_n_pos1.vhd(19): ignored assignment of value to null range
+Info (12128): Elaborating entity "MatrixModAdd_2_n_pos1" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM"
+Info (12128): Elaborating entity "Comp_m_2" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|Comp_m_2:cp0"
+Info (12128): Elaborating entity "mod_adder_pref" for hierarchy "Multiplier_2_n_pos1:\converter:mult_m3|MatrixModAdd_2_n_pos1:SUM|mod_adder_pref:MAdder"
+Info (12128): Elaborating entity "traditionalSystem_RNStoBin" for hierarchy "traditionalSystem_RNStoBin:\converter:comp_RNSbin"
+Info (12128): Elaborating entity "CSA_2n_mp_1" for hierarchy "traditionalSystem_RNStoBin:\converter:comp_RNSbin|CSA_2n_mp_1:\converter:comp0_2n_m1"
+Warning (10036): Verilog HDL or VHDL warning at CSA_2n_mp_1.vhd(29): object "modo_b" assigned a value but never read
+Info (12128): Elaborating entity "adder_2n_mp_1" for hierarchy "traditionalSystem_RNStoBin:\converter:comp_RNSbin|adder_2n_mp_1:\converter:add_2n_m1"
+Info (12128): Elaborating entity "Decod7seg" for hierarchy "Decod7seg:\converter:comp_disp1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[16]"
+Info (21057): Implemented 505 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 53 output pins
+    Info (21061): Implemented 430 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 503 megabytes
+    Info: Processing ended: Tue Nov 05 19:17:00 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
+
+

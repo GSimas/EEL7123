@@ -1,0 +1,9 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="00000000000000000000"/>
+  </project>
+  <file_info>
+    <file checksum="0x00340DF8" device="EP2C35F672C6" path="LAB3a.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x1C75B12D" device="EPCS16" path="LAB3a.pof" usercode="0x00000000"/>
+  </file_info>
+</sld_project_info>
