@@ -1,5 +1,5 @@
 Flow report for DivideConquer
-Wed Nov 20 13:42:08 2019
+Thu Nov 21 10:48:52 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 20 13:42:08 2019      ;
+; Flow Status                        ; Successful - Thu Nov 21 10:48:52 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; DivideConquer                              ;
-; Top-level Entity Name              ; DivideConquer                              ;
+; Top-level Entity Name              ; DivideConquer_4b_C1                        ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C35F672C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 182 / 33,216 ( < 1 % )                     ;
-;     Total combinational functions  ; 182 / 33,216 ( < 1 % )                     ;
+; Total logic elements               ; 214 / 33,216 ( < 1 % )                     ;
+;     Total combinational functions  ; 214 / 33,216 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 60 / 475 ( 13 % )                          ;
@@ -64,28 +64,29 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/20/2019 13:41:56 ;
+; Start date & time ; 11/21/2019 10:48:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DivideConquer       ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 247207025844207.157426811608808 ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++-------------------------------------+---------------------------------+---------------+---------------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name         ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+---------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 247207025844207.157434412003488 ; --            ; --                  ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --                  ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --                  ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --                  ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --                  ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --                  ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; DivideConquer_4b_C1 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; DivideConquer_4b_C1 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; DivideConquer_4b_C1 ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --                  ; --             ;
+; TOP_LEVEL_ENTITY                    ; DivideConquer_4b_C1             ; DivideConquer ; --                  ; --             ;
++-------------------------------------+---------------------------------+---------------+---------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -93,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4883 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4573 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4559 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4661 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4886 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4568 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4559 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
+; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

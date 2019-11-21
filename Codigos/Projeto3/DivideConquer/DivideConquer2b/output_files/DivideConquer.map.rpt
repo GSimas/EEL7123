@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DivideConquer
-Wed Nov 20 13:41:57 2019
+Thu Nov 21 10:48:42 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -14,22 +14,53 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |DivideConquer
- 10. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder1
- 11. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder2
- 12. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder3
- 13. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder4
- 14. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder5
- 15. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 16. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult2
- 17. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1
- 18. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult3
- 19. lpm_mult Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "nBitAdder:\converter:adder5"
- 21. Port Connectivity Checks: "nBitAdder:\converter:adder2"
- 22. Port Connectivity Checks: "nBitAdder:\converter:adder1"
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |DivideConquer_4b_C1
+ 10. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1
+ 11. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1
+ 12. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2
+ 13. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3
+ 14. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4
+ 15. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5
+ 16. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2
+ 17. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder1
+ 18. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder2
+ 19. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3
+ 20. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4
+ 21. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5
+ 22. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3
+ 23. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1
+ 24. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2
+ 25. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3
+ 26. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4
+ 27. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder5
+ 28. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4
+ 29. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder1
+ 30. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder2
+ 31. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3
+ 32. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4
+ 33. Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5
+ 34. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder1
+ 35. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder2
+ 36. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder3
+ 37. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder4
+ 38. Parameter Settings for User Entity Instance: nBitAdder:\converter:adder5
+ 39. Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult1|lpm_mult:Mult0
+ 40. Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult1|lpm_mult:Mult2
+ 41. Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult3|lpm_mult:Mult0
+ 42. Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult3|lpm_mult:Mult2
+ 43. lpm_mult Parameter Settings by Entity Instance
+ 44. Port Connectivity Checks: "nBitAdder:\converter:adder5"
+ 45. Port Connectivity Checks: "nBitAdder:\converter:adder2"
+ 46. Port Connectivity Checks: "nBitAdder:\converter:adder1"
+ 47. Port Connectivity Checks: "DivideConquer2b:\converter:mult4"
+ 48. Port Connectivity Checks: "DivideConquer2b:\converter:mult3"
+ 49. Port Connectivity Checks: "DivideConquer2b:\converter:mult2"
+ 50. Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5"
+ 51. Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2"
+ 52. Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1"
+ 53. Port Connectivity Checks: "DivideConquer2b:\converter:mult1"
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
 
 
 
@@ -55,13 +86,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 20 13:41:57 2019      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 21 10:48:42 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; DivideConquer                              ;
-; Top-level Entity Name              ; DivideConquer                              ;
+; Top-level Entity Name              ; DivideConquer_4b_C1                        ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 182                                        ;
-;     Total combinational functions  ; 182                                        ;
+; Total logic elements               ; 214                                        ;
+;     Total combinational functions  ; 214                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 60                                         ;
@@ -72,89 +103,89 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; DivideConquer      ; DivideConquer      ;
-; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                         ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Option                                                                     ; Setting             ; Default Value      ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6        ;                    ;
+; Top-level entity name                                                      ; DivideConquer_4b_C1 ; DivideConquer      ;
+; Family name                                                                ; Cyclone II          ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                 ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                 ;
+; Enable compact report table                                                ; Off                 ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                ;
+; Preserve fewer node names                                                  ; On                  ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                ;
+; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                ; Auto               ;
+; Safe State Machine                                                         ; Off                 ; Off                ;
+; Extract Verilog State Machines                                             ; On                  ; On                 ;
+; Extract VHDL State Machines                                                ; On                  ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                 ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                  ; On                 ;
+; Parallel Synthesis                                                         ; On                  ; On                 ;
+; DSP Block Balancing                                                        ; Auto                ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                  ; On                 ;
+; Power-Up Don't Care                                                        ; On                  ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                 ; Off                ;
+; Remove Duplicate Registers                                                 ; On                  ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                 ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                 ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                 ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                  ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                ;
+; Optimization Technique                                                     ; Balanced            ; Balanced           ;
+; Carry Chain Length                                                         ; 70                  ; 70                 ;
+; Auto Carry Chains                                                          ; On                  ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                  ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                ;
+; Auto ROM Replacement                                                       ; On                  ; On                 ;
+; Auto RAM Replacement                                                       ; On                  ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                  ; On                 ;
+; Strict RAM Replacement                                                     ; Off                 ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                  ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                ;
+; Auto Resource Sharing                                                      ; Off                 ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                 ; Off                ;
+; Report Parameter Settings                                                  ; On                  ; On                 ;
+; Report Source Assignments                                                  ; On                  ; On                 ;
+; Report Connectivity Checks                                                 ; On                  ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                   ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation ;
+; HDL message level                                                          ; Level2              ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                 ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                ;
+; Clock MUX Protection                                                       ; On                  ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                 ; Off                ;
+; Block Design Naming                                                        ; Auto                ; Auto               ;
+; SDC constraint protection                                                  ; Off                 ; Off                ;
+; Synthesis Effort                                                           ; Auto                ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                 ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium              ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                  ; On                 ;
+; Synthesis Seed                                                             ; 1                   ; 1                  ;
++----------------------------------------------------------------------------+---------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -168,41 +199,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; nBitAdder.vhd                    ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/nBitAdder.vhd        ;         ;
-; functions.vhd                    ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/functions.vhd        ;         ;
-; DivideConquer.vhd                ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer.vhd    ;         ;
-; FullAdder.vhd                    ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/FullAdder.vhd        ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/multcore.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/bypassff.inc            ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/altshift.inc            ;         ;
-; multcore.tdf                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/multcore.tdf            ;         ;
-; csa_add.inc                      ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/csa_add.inc             ;         ;
-; mpar_add.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mpar_add.inc            ;         ;
-; muleabz.inc                      ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/muleabz.inc             ;         ;
-; mul_lfrg.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mul_lfrg.inc            ;         ;
-; mul_boothc.inc                   ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mul_boothc.inc          ;         ;
-; alt_ded_mult.inc                 ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_ded_mult.inc        ;         ;
-; alt_ded_mult_y.inc               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_ded_mult_y.inc      ;         ;
-; dffpipe.inc                      ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/dffpipe.inc             ;         ;
-; mpar_add.tdf                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mpar_add.tdf            ;         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
-; addcore.inc                      ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/addcore.inc             ;         ;
-; look_add.inc                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/look_add.inc            ;         ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
-; db/add_sub_3ch.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/db/add_sub_3ch.tdf   ;         ;
-; db/add_sub_7ch.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/db/add_sub_7ch.tdf   ;         ;
-; altshift.tdf                     ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/altshift.tdf            ;         ;
-; db/add_sub_5ch.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/db/add_sub_5ch.tdf   ;         ;
-; db/add_sub_9ch.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/db/add_sub_9ch.tdf   ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                               ; Library ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; DivideConquer2b.vhd                        ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer2b/DivideConquer2b.vhd     ;         ;
+; ../Constants Files/DivideConquer_4b_C1.vhd ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/Constants Files/DivideConquer_4b_C1.vhd ;         ;
+; nBitAdder.vhd                              ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer2b/nBitAdder.vhd           ;         ;
+; functions.vhd                              ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer2b/functions.vhd           ;         ;
+; FullAdder.vhd                              ; yes             ; User VHDL File               ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer2b/FullAdder.vhd           ;         ;
+; lpm_mult.tdf                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_mult.tdf                               ;         ;
+; aglobal130.inc                             ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/aglobal130.inc                             ;         ;
+; lpm_add_sub.inc                            ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_add_sub.inc                            ;         ;
+; multcore.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/multcore.inc                               ;         ;
+; bypassff.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/bypassff.inc                               ;         ;
+; altshift.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/altshift.inc                               ;         ;
+; multcore.tdf                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/multcore.tdf                               ;         ;
+; csa_add.inc                                ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/csa_add.inc                                ;         ;
+; mpar_add.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mpar_add.inc                               ;         ;
+; muleabz.inc                                ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/muleabz.inc                                ;         ;
+; mul_lfrg.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mul_lfrg.inc                               ;         ;
+; mul_boothc.inc                             ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mul_boothc.inc                             ;         ;
+; alt_ded_mult.inc                           ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_ded_mult.inc                           ;         ;
+; alt_ded_mult_y.inc                         ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_ded_mult_y.inc                         ;         ;
+; dffpipe.inc                                ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/dffpipe.inc                                ;         ;
+; mpar_add.tdf                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/mpar_add.tdf                               ;         ;
+; lpm_add_sub.tdf                            ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/lpm_add_sub.tdf                            ;         ;
+; addcore.inc                                ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/addcore.inc                                ;         ;
+; look_add.inc                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/look_add.inc                               ;         ;
+; alt_stratix_add_sub.inc                    ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                    ;         ;
+; db/add_sub_nah.tdf                         ; yes             ; Auto-Generated Megafunction  ; D:/Usuário/Documents/GitHub/EEL7123/Codigos/Projeto3/DivideConquer/DivideConquer2b/db/add_sub_nah.tdf      ;         ;
+; altshift.tdf                               ; yes             ; Megafunction                 ; d:/usuário/documents/quartus ii/quartus/libraries/megafunctions/altshift.tdf                               ;         ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -210,17 +239,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 182   ;
+; Estimated Total logic elements              ; 214   ;
 ;                                             ;       ;
-; Total combinational functions               ; 182   ;
+; Total combinational functions               ; 214   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 61    ;
-;     -- 3 input functions                    ; 55    ;
-;     -- <=2 input functions                  ; 66    ;
+;     -- 4 input functions                    ; 137   ;
+;     -- 3 input functions                    ; 42    ;
+;     -- <=2 input functions                  ; 35    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 114   ;
-;     -- arithmetic mode                      ; 68    ;
+;     -- normal mode                          ; 206   ;
+;     -- arithmetic mode                      ; 8     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
@@ -229,101 +258,170 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 60    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; X[0]  ;
-; Maximum fan-out                             ; 12    ;
-; Total fan-out                               ; 564   ;
-; Average fan-out                             ; 2.33  ;
+; Maximum fan-out                             ; 20    ;
+; Total fan-out                               ; 775   ;
+; Average fan-out                             ; 2.83  ;
 +---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                               ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                   ; Library Name ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DivideConquer                                 ; 182 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 60   ; 0            ; |DivideConquer                                                                                                                        ;              ;
-;    |lpm_mult:Mult0|                            ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0                                                                                                         ;              ;
-;       |multcore:mult_core|                     ; 33 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core                                                                                      ;              ;
-;          |mpar_add:padder|                     ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ;              ;
-;             |lpm_add_sub:adder[0]|             ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;              ;
-;                |add_sub_3ch:auto_generated|    ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_3ch:auto_generated                      ;              ;
-;             |mpar_add:sub_par_add|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;              ;
-;                |lpm_add_sub:adder[0]|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;              ;
-;                   |add_sub_7ch:auto_generated| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_7ch:auto_generated ;              ;
-;    |lpm_mult:Mult1|                            ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1                                                                                                         ;              ;
-;       |multcore:mult_core|                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core                                                                                      ;              ;
-;          |mpar_add:padder|                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ;              ;
-;             |lpm_add_sub:adder[0]|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;              ;
-;                |add_sub_5ch:auto_generated|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_5ch:auto_generated                      ;              ;
-;             |mpar_add:sub_par_add|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;              ;
-;                |lpm_add_sub:adder[0]|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;              ;
-;                   |add_sub_9ch:auto_generated| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_9ch:auto_generated ;              ;
-;    |lpm_mult:Mult2|                            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2                                                                                                         ;              ;
-;       |multcore:mult_core|                     ; 32 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core                                                                                      ;              ;
-;          |mpar_add:padder|                     ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder                                                                      ;              ;
-;             |lpm_add_sub:adder[0]|             ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;              ;
-;                |add_sub_3ch:auto_generated|    ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_3ch:auto_generated                      ;              ;
-;             |mpar_add:sub_par_add|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;              ;
-;                |lpm_add_sub:adder[0]|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;              ;
-;                   |add_sub_7ch:auto_generated| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_7ch:auto_generated ;              ;
-;    |lpm_mult:Mult3|                            ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3                                                                                                         ;              ;
-;       |multcore:mult_core|                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core                                                                                      ;              ;
-;          |mpar_add:padder|                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder                                                                      ;              ;
-;             |lpm_add_sub:adder[0]|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ;              ;
-;                |add_sub_5ch:auto_generated|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_5ch:auto_generated                      ;              ;
-;             |mpar_add:sub_par_add|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;              ;
-;                |lpm_add_sub:adder[0]|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;              ;
-;                   |add_sub_9ch:auto_generated| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_9ch:auto_generated ;              ;
-;    |nBitAdder:\converter:adder1|               ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1                                                                                            ;              ;
-;       |FullAdder:\nBitLoop:3:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:3:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:4:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:5:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:6:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:7:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:8:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:9:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:9:jbit                                                                 ;              ;
-;    |nBitAdder:\converter:adder2|               ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2                                                                                            ;              ;
-;       |FullAdder:\nBitLoop:1:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:1:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:2:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:2:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:3:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:5:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:6:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:7:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:8:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:8:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:9:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:9:jbit                                                                 ;              ;
-;    |nBitAdder:\converter:adder3|               ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3                                                                                            ;              ;
-;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:0:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:1:jbit|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:2:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:3:jbit|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:3:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:4:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:5:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:6:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:7:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:8:jbit                                                                 ;              ;
-;    |nBitAdder:\converter:adder4|               ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4                                                                                            ;              ;
-;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:1:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:2:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:3:jbit|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:5:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:6:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:7:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:8:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:8:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:9:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:9:jbit                                                                 ;              ;
-;    |nBitAdder:\converter:adder5|               ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5                                                                                            ;              ;
-;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:1:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:2:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:2:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:3:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:4:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:4:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:5:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:5:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:6:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:7:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:7:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:8:jbit                                                                 ;              ;
-;       |FullAdder:\nBitLoop:9:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:9:jbit                                                                 ;              ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                 ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |DivideConquer_4b_C1                           ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 60   ; 0            ; |DivideConquer_4b_C1                                                                                                                                    ;              ;
+;    |DivideConquer2b:\converter:mult1|          ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1                                                                                                   ;              ;
+;       |lpm_mult:Mult0|                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult0                                                                                    ;              ;
+;          |multcore:mult_core|                  ; 8 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core                                                                 ;              ;
+;             |mpar_add:padder|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ;              ;
+;                |lpm_add_sub:adder[0]|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
+;                   |add_sub_nah:auto_generated| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_nah:auto_generated ;              ;
+;       |lpm_mult:Mult2|                         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult2                                                                                    ;              ;
+;          |multcore:mult_core|                  ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult2|multcore:mult_core                                                                 ;              ;
+;             |mpar_add:padder|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder                                                 ;              ;
+;                |lpm_add_sub:adder[0]|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
+;                   |add_sub_nah:auto_generated| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_nah:auto_generated ;              ;
+;       |nBitAdder:\converter:adder1|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1                                                                       ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder2|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2                                                                       ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder3|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder4|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder5|            ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;    |DivideConquer2b:\converter:mult2|          ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2                                                                                                   ;              ;
+;       |nBitAdder:\converter:adder2|            ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder2                                                                       ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder3|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3                                                                       ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder4|            ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder5|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;    |DivideConquer2b:\converter:mult3|          ; 41 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3                                                                                                   ;              ;
+;       |lpm_mult:Mult0|                         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult0                                                                                    ;              ;
+;          |multcore:mult_core|                  ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult0|multcore:mult_core                                                                 ;              ;
+;             |mpar_add:padder|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ;              ;
+;                |lpm_add_sub:adder[0]|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
+;                   |add_sub_nah:auto_generated| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_nah:auto_generated ;              ;
+;       |lpm_mult:Mult2|                         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult2                                                                                    ;              ;
+;          |multcore:mult_core|                  ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult2|multcore:mult_core                                                                 ;              ;
+;             |mpar_add:padder|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder                                                 ;              ;
+;                |lpm_add_sub:adder[0]|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
+;                   |add_sub_nah:auto_generated| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_nah:auto_generated ;              ;
+;       |nBitAdder:\converter:adder1|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1                                                                       ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder2|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2                                                                       ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder3|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder4|            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder5|            ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder5                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;    |DivideConquer2b:\converter:mult4|          ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4                                                                                                   ;              ;
+;       |nBitAdder:\converter:adder2|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder2                                                                       ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder3|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3                                                                       ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder4|            ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:3:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:4:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                            ;              ;
+;       |nBitAdder:\converter:adder5|            ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5                                                                       ;              ;
+;          |FullAdder:\nBitLoop:0:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:1:jbit|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                            ;              ;
+;          |FullAdder:\nBitLoop:2:jbit|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:2:jbit                                            ;              ;
+;    |nBitAdder:\converter:adder1|               ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1                                                                                                        ;              ;
+;       |FullAdder:\nBitLoop:3:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:3:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:4:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:5:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:6:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:7:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:8:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:9:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:9:jbit                                                                             ;              ;
+;    |nBitAdder:\converter:adder2|               ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2                                                                                                        ;              ;
+;       |FullAdder:\nBitLoop:1:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:1:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:2:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:2:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:3:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:4:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:5:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:6:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:7:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:8:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:8:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:9:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder2|FullAdder:\nBitLoop:9:jbit                                                                             ;              ;
+;    |nBitAdder:\converter:adder3|               ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3                                                                                                        ;              ;
+;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:0:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:1:jbit|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:1:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:2:jbit|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:2:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:3:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:4:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:5:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:6:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:7:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder3|FullAdder:\nBitLoop:8:jbit                                                                             ;              ;
+;    |nBitAdder:\converter:adder4|               ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4                                                                                                        ;              ;
+;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:0:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:1:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:1:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:2:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:2:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:3:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:4:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:4:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:5:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:5:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:6:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:7:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:7:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:8:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:8:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:9:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder4|FullAdder:\nBitLoop:9:jbit                                                                             ;              ;
+;    |nBitAdder:\converter:adder5|               ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5                                                                                                        ;              ;
+;       |FullAdder:\nBitLoop:0:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:0:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:1:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:1:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:2:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:2:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:3:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:3:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:4:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:4:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:5:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:5:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:6:jbit|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:6:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:7:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:7:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:8:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:8:jbit                                                                             ;              ;
+;       |FullAdder:\nBitLoop:9:jbit|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DivideConquer_4b_C1|nBitAdder:\converter:adder5|FullAdder:\nBitLoop:9:jbit                                                                             ;              ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -342,13 +440,253 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |DivideConquer_4b_C1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 20    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |DivideConquer ;
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1 ;
 +----------------+-------+------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                 ;
 +----------------+-------+------------------------------------------------------+
-; n              ; 20    ; Signed Integer                                       ;
+; n              ; 10    ; Signed Integer                                       ;
 +----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder3 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder4 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder2 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder3 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder4 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult2|nBitAdder:\converter:adder5 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder2 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder3 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder4 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult3|nBitAdder:\converter:adder5 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder2 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder3 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder4 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DivideConquer2b:\converter:mult4|nBitAdder:\converter:adder5 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -402,197 +740,197 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0                   ;
-+------------------------------------------------+------------+---------------------+
-; Parameter Name                                 ; Value      ; Type                ;
-+------------------------------------------------+------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 8          ; Untyped             ;
-; LPM_WIDTHB                                     ; 10         ; Untyped             ;
-; LPM_WIDTHP                                     ; 18         ; Untyped             ;
-; LPM_WIDTHR                                     ; 18         ; Untyped             ;
-; LPM_WIDTHS                                     ; 1          ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
-; LPM_PIPELINE                                   ; 0          ; Untyped             ;
-; LATENCY                                        ; 0          ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
-; USE_EAB                                        ; OFF        ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
-; CBXI_PARAMETER                                 ; NOTHING    ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
-+------------------------------------------------+------------+---------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult1|lpm_mult:Mult0 ;
++------------------------------------------------+------------+------------------------------------+
+; Parameter Name                                 ; Value      ; Type                               ;
++------------------------------------------------+------------+------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                     ;
+; LPM_WIDTHA                                     ; 3          ; Untyped                            ;
+; LPM_WIDTHB                                     ; 5          ; Untyped                            ;
+; LPM_WIDTHP                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHR                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                            ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                            ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                            ;
+; LATENCY                                        ; 0          ; Untyped                            ;
+; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped                            ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                            ;
+; USE_EAB                                        ; OFF        ; Untyped                            ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                            ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                            ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                            ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                            ;
+; CBXI_PARAMETER                                 ; NOTHING    ; Untyped                            ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                            ;
++------------------------------------------------+------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult2                   ;
-+------------------------------------------------+------------+---------------------+
-; Parameter Name                                 ; Value      ; Type                ;
-+------------------------------------------------+------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 8          ; Untyped             ;
-; LPM_WIDTHB                                     ; 10         ; Untyped             ;
-; LPM_WIDTHP                                     ; 18         ; Untyped             ;
-; LPM_WIDTHR                                     ; 18         ; Untyped             ;
-; LPM_WIDTHS                                     ; 1          ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
-; LPM_PIPELINE                                   ; 0          ; Untyped             ;
-; LATENCY                                        ; 0          ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
-; USE_EAB                                        ; OFF        ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
-; CBXI_PARAMETER                                 ; NOTHING    ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
-+------------------------------------------------+------------+---------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult1|lpm_mult:Mult2 ;
++------------------------------------------------+------------+------------------------------------+
+; Parameter Name                                 ; Value      ; Type                               ;
++------------------------------------------------+------------+------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                     ;
+; LPM_WIDTHA                                     ; 3          ; Untyped                            ;
+; LPM_WIDTHB                                     ; 5          ; Untyped                            ;
+; LPM_WIDTHP                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHR                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                            ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                            ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                            ;
+; LATENCY                                        ; 0          ; Untyped                            ;
+; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped                            ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                            ;
+; USE_EAB                                        ; OFF        ; Untyped                            ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                            ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                            ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                            ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                            ;
+; CBXI_PARAMETER                                 ; NOTHING    ; Untyped                            ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                            ;
++------------------------------------------------+------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1                   ;
-+------------------------------------------------+------------+---------------------+
-; Parameter Name                                 ; Value      ; Type                ;
-+------------------------------------------------+------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 10         ; Untyped             ;
-; LPM_WIDTHB                                     ; 10         ; Untyped             ;
-; LPM_WIDTHP                                     ; 20         ; Untyped             ;
-; LPM_WIDTHR                                     ; 20         ; Untyped             ;
-; LPM_WIDTHS                                     ; 1          ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
-; LPM_PIPELINE                                   ; 0          ; Untyped             ;
-; LATENCY                                        ; 0          ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
-; USE_EAB                                        ; OFF        ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
-; CBXI_PARAMETER                                 ; NOTHING    ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
-+------------------------------------------------+------------+---------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult3|lpm_mult:Mult0 ;
++------------------------------------------------+------------+------------------------------------+
+; Parameter Name                                 ; Value      ; Type                               ;
++------------------------------------------------+------------+------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                     ;
+; LPM_WIDTHA                                     ; 3          ; Untyped                            ;
+; LPM_WIDTHB                                     ; 5          ; Untyped                            ;
+; LPM_WIDTHP                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHR                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                            ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                            ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                            ;
+; LATENCY                                        ; 0          ; Untyped                            ;
+; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped                            ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                            ;
+; USE_EAB                                        ; OFF        ; Untyped                            ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                            ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                            ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                            ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                            ;
+; CBXI_PARAMETER                                 ; NOTHING    ; Untyped                            ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                            ;
++------------------------------------------------+------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult3                   ;
-+------------------------------------------------+------------+---------------------+
-; Parameter Name                                 ; Value      ; Type                ;
-+------------------------------------------------+------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 10         ; Untyped             ;
-; LPM_WIDTHB                                     ; 10         ; Untyped             ;
-; LPM_WIDTHP                                     ; 20         ; Untyped             ;
-; LPM_WIDTHR                                     ; 20         ; Untyped             ;
-; LPM_WIDTHS                                     ; 1          ; Untyped             ;
-; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
-; LPM_PIPELINE                                   ; 0          ; Untyped             ;
-; LATENCY                                        ; 0          ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
-; USE_EAB                                        ; OFF        ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
-; CBXI_PARAMETER                                 ; NOTHING    ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
-+------------------------------------------------+------------+---------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DivideConquer2b:\converter:mult3|lpm_mult:Mult2 ;
++------------------------------------------------+------------+------------------------------------+
+; Parameter Name                                 ; Value      ; Type                               ;
++------------------------------------------------+------------+------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                     ;
+; LPM_WIDTHA                                     ; 3          ; Untyped                            ;
+; LPM_WIDTHB                                     ; 5          ; Untyped                            ;
+; LPM_WIDTHP                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHR                                     ; 8          ; Untyped                            ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                            ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                            ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                            ;
+; LATENCY                                        ; 0          ; Untyped                            ;
+; INPUT_A_IS_CONSTANT                            ; YES        ; Untyped                            ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                            ;
+; USE_EAB                                        ; OFF        ; Untyped                            ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                            ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                            ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                            ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                            ;
+; CBXI_PARAMETER                                 ; NOTHING    ; Untyped                            ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                            ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                            ;
++------------------------------------------------+------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance         ;
-+---------------------------------------+----------------+
-; Name                                  ; Value          ;
-+---------------------------------------+----------------+
-; Number of entity instances            ; 4              ;
-; Entity Instance                       ; lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 8              ;
-;     -- LPM_WIDTHB                     ; 10             ;
-;     -- LPM_WIDTHP                     ; 18             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
-;     -- INPUT_A_IS_CONSTANT            ; YES            ;
-;     -- INPUT_B_IS_CONSTANT            ; NO             ;
-;     -- USE_EAB                        ; OFF            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
-; Entity Instance                       ; lpm_mult:Mult2 ;
-;     -- LPM_WIDTHA                     ; 8              ;
-;     -- LPM_WIDTHB                     ; 10             ;
-;     -- LPM_WIDTHP                     ; 18             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
-;     -- INPUT_A_IS_CONSTANT            ; YES            ;
-;     -- INPUT_B_IS_CONSTANT            ; NO             ;
-;     -- USE_EAB                        ; OFF            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
-; Entity Instance                       ; lpm_mult:Mult1 ;
-;     -- LPM_WIDTHA                     ; 10             ;
-;     -- LPM_WIDTHB                     ; 10             ;
-;     -- LPM_WIDTHP                     ; 20             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
-;     -- INPUT_A_IS_CONSTANT            ; YES            ;
-;     -- INPUT_B_IS_CONSTANT            ; NO             ;
-;     -- USE_EAB                        ; OFF            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
-; Entity Instance                       ; lpm_mult:Mult3 ;
-;     -- LPM_WIDTHA                     ; 10             ;
-;     -- LPM_WIDTHB                     ; 10             ;
-;     -- LPM_WIDTHP                     ; 20             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
-;     -- INPUT_A_IS_CONSTANT            ; YES            ;
-;     -- INPUT_B_IS_CONSTANT            ; NO             ;
-;     -- USE_EAB                        ; OFF            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
-+---------------------------------------+----------------+
++-----------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                          ;
++---------------------------------------+-------------------------------------------------+
+; Name                                  ; Value                                           ;
++---------------------------------------+-------------------------------------------------+
+; Number of entity instances            ; 4                                               ;
+; Entity Instance                       ; DivideConquer2b:\converter:mult1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 3                                               ;
+;     -- LPM_WIDTHB                     ; 5                                               ;
+;     -- LPM_WIDTHP                     ; 8                                               ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                        ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                              ;
+;     -- USE_EAB                        ; OFF                                             ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                            ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                              ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                              ;
+; Entity Instance                       ; DivideConquer2b:\converter:mult1|lpm_mult:Mult2 ;
+;     -- LPM_WIDTHA                     ; 3                                               ;
+;     -- LPM_WIDTHB                     ; 5                                               ;
+;     -- LPM_WIDTHP                     ; 8                                               ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                        ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                              ;
+;     -- USE_EAB                        ; OFF                                             ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                            ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                              ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                              ;
+; Entity Instance                       ; DivideConquer2b:\converter:mult3|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 3                                               ;
+;     -- LPM_WIDTHB                     ; 5                                               ;
+;     -- LPM_WIDTHP                     ; 8                                               ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                        ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                              ;
+;     -- USE_EAB                        ; OFF                                             ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                            ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                              ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                              ;
+; Entity Instance                       ; DivideConquer2b:\converter:mult3|lpm_mult:Mult2 ;
+;     -- LPM_WIDTHA                     ; 3                                               ;
+;     -- LPM_WIDTHB                     ; 5                                               ;
+;     -- LPM_WIDTHP                     ; 8                                               ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                        ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                              ;
+;     -- USE_EAB                        ; OFF                                             ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                            ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                              ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                              ;
++---------------------------------------+-------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -600,7 +938,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port                ; Type   ; Severity ; Details                                                                             ;
 +---------------------+--------+----------+-------------------------------------------------------------------------------------+
-; inputvector_b[9..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; inputvector_a[9..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; outputvector[10]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -623,6 +961,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+----------------------------+
 
 
++--------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult4" ;
++---------+-------+----------+---------------------------------+
+; Port    ; Type  ; Severity ; Details                         ;
++---------+-------+----------+---------------------------------+
+; a[8..4] ; Input ; Info     ; Stuck at GND                    ;
+; a[2..0] ; Input ; Info     ; Stuck at GND                    ;
+; a[9]    ; Input ; Info     ; Stuck at VCC                    ;
+; a[3]    ; Input ; Info     ; Stuck at VCC                    ;
++---------+-------+----------+---------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult3" ;
++---------+-------+----------+---------------------------------+
+; Port    ; Type  ; Severity ; Details                         ;
++---------+-------+----------+---------------------------------+
+; a[2..1] ; Input ; Info     ; Stuck at VCC                    ;
+; a[9..8] ; Input ; Info     ; Stuck at GND                    ;
+; a[6..3] ; Input ; Info     ; Stuck at GND                    ;
+; a[7]    ; Input ; Info     ; Stuck at VCC                    ;
+; a[0]    ; Input ; Info     ; Stuck at GND                    ;
++---------+-------+----------+---------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult2" ;
++---------+-------+----------+---------------------------------+
+; Port    ; Type  ; Severity ; Details                         ;
++---------+-------+----------+---------------------------------+
+; a[8..4] ; Input ; Info     ; Stuck at GND                    ;
+; a[2..0] ; Input ; Info     ; Stuck at GND                    ;
+; a[9]    ; Input ; Info     ; Stuck at VCC                    ;
+; a[3]    ; Input ; Info     ; Stuck at VCC                    ;
++---------+-------+----------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder5"                                      ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; inputvector_b[4..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; outputvector[5]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder2" ;
++---------+-------+----------+-------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                     ;
++---------+-------+----------+-------------------------------------------------------------+
+; carryin ; Input ; Info     ; Stuck at GND                                                ;
++---------+-------+----------+-------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1" ;
++---------+-------+----------+-------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                     ;
++---------+-------+----------+-------------------------------------------------------------+
+; carryin ; Input ; Info     ; Stuck at GND                                                ;
++---------+-------+----------+-------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "DivideConquer2b:\converter:mult1" ;
++---------+-------+----------+---------------------------------+
+; Port    ; Type  ; Severity ; Details                         ;
++---------+-------+----------+---------------------------------+
+; a[2..1] ; Input ; Info     ; Stuck at VCC                    ;
+; a[9..8] ; Input ; Info     ; Stuck at GND                    ;
+; a[6..3] ; Input ; Info     ; Stuck at GND                    ;
+; a[7]    ; Input ; Info     ; Stuck at VCC                    ;
+; a[0]    ; Input ; Info     ; Stuck at GND                    ;
++---------+-------+----------+---------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -638,9 +1054,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 20 13:41:56 2019
+    Info: Processing started: Thu Nov 21 10:48:40 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DivideConquer -c DivideConquer
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file divideconquer2b.vhd
+    Info (12022): Found design unit 1: DivideConquer2b-Structural
+    Info (12023): Found entity 1: DivideConquer2b
+Info (12021): Found 2 design units, including 1 entities, in source file /usuário/documents/github/eel7123/codigos/projeto3/divideconquer/constants files/divideconquer_4b_c1.vhd
+    Info (12022): Found design unit 1: DivideConquer_4b_C1-Structural
+    Info (12023): Found entity 1: DivideConquer_4b_C1
 Info (12021): Found 2 design units, including 1 entities, in source file nbitadder.vhd
     Info (12022): Found design unit 1: nBitAdder-Behavioral
     Info (12023): Found entity 1: nBitAdder
@@ -653,75 +1075,50 @@ Info (12021): Found 2 design units, including 1 entities, in source file decod7s
 Info (12021): Found 2 design units, including 1 entities, in source file buttonsync.vhd
     Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
     Info (12023): Found entity 1: ButtonSync
-Info (12021): Found 2 design units, including 1 entities, in source file divideconquer.vhd
-    Info (12022): Found design unit 1: DivideConquer-Structural
-    Info (12023): Found entity 1: DivideConquer
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
     Info (12022): Found design unit 1: FullAdder-LogicalImplementation
     Info (12023): Found entity 1: FullAdder
-Info (12127): Elaborating entity "DivideConquer" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at DivideConquer.vhd(52): used explicit default value for signal "zeros_add" because signal was never assigned a value
+Info (12127): Elaborating entity "DivideConquer_4b_C1" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at DivideConquer_4b_C1.vhd(60): used explicit default value for signal "zeros_add" because signal was never assigned a value
+Info (12128): Elaborating entity "DivideConquer2b" for hierarchy "DivideConquer2b:\converter:mult1"
+Warning (10540): VHDL Signal Declaration warning at DivideConquer2b.vhd(53): used explicit default value for signal "zeros_add" because signal was never assigned a value
+Info (12128): Elaborating entity "nBitAdder" for hierarchy "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "DivideConquer2b:\converter:mult1|nBitAdder:\converter:adder1|FullAdder:\nBitLoop:0:jbit"
 Info (12128): Elaborating entity "nBitAdder" for hierarchy "nBitAdder:\converter:adder1"
-Info (12128): Elaborating entity "FullAdder" for hierarchy "nBitAdder:\converter:adder1|FullAdder:\nBitLoop:0:jbit"
 Info (278001): Inferred 4 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult2"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult1"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult3"
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0"
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "8"
-    Info (12134): Parameter "LPM_WIDTHB" = "10"
-    Info (12134): Parameter "LPM_WIDTHP" = "18"
-    Info (12134): Parameter "LPM_WIDTHR" = "18"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DivideConquer2b:\converter:mult1|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DivideConquer2b:\converter:mult1|Mult2"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DivideConquer2b:\converter:mult3|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DivideConquer2b:\converter:mult3|Mult2"
+Info (12130): Elaborated megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "DivideConquer2b:\converter:mult1|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "3"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "8"
+    Info (12134): Parameter "LPM_WIDTHR" = "8"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_3ch.tdf
-    Info (12023): Found entity 1: add_sub_3ch
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7ch.tdf
-    Info (12023): Found entity 1: add_sub_7ch
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "lpm_mult:Mult0"
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult1"
-Info (12133): Instantiated megafunction "lpm_mult:Mult1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "10"
-    Info (12134): Parameter "LPM_WIDTHB" = "10"
-    Info (12134): Parameter "LPM_WIDTHP" = "20"
-    Info (12134): Parameter "LPM_WIDTHR" = "20"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_5ch.tdf
-    Info (12023): Found entity 1: add_sub_5ch
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "lpm_mult:Mult1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_9ch.tdf
-    Info (12023): Found entity 1: add_sub_9ch
-Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "lpm_mult:Mult1"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0"
+Info (12131): Elaborated megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0"
+Info (12131): Elaborated megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_nah.tdf
+    Info (12023): Found entity 1: add_sub_nah
+Info (12131): Elaborated megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "DivideConquer2b:\converter:mult1|lpm_mult:Mult0"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "S[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 242 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 274 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 182 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Wed Nov 20 13:41:57 2019
-    Info: Elapsed time: 00:00:01
+    Info (21061): Implemented 214 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Thu Nov 21 10:48:42 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

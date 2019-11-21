@@ -13,7 +13,7 @@
 ---------------------------------------------------------------------------------------------------
 --
 -- Description : Divide and conquer method for large constants multiplication 2b x 2b
--- CONSTANT C2 : 11110100111000100000
+-- CONSTANT C2 : 11100100000000100000
 ---------------------------------------------------------------------------------------------------
 
 
@@ -63,8 +63,8 @@ converter : block
 begin
 
 
-AL <= "1000100000"; --CONSTANT LOW SIDE
-AH <= "1111010011"; --CONSTANT HIGH SIDE
+AL <= "0000100000"; --CONSTANT LOW SIDE
+AH <= "1110010000"; --CONSTANT HIGH SIDE
 
 XL <= X(n/2-1 downto 0); --MULTIPLIER LOW SIDE
 XH <= X(n-1 downto n/2); --MULTIPLIER HIGH SIDE
