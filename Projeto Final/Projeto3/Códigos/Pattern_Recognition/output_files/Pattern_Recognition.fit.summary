@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 21 13:47:27 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Pattern_Recognition
+Top-level Entity Name : Pattern_Recognition
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 740 / 33,216 ( 2 % )
+    Total combinational functions : 740 / 33,216 ( 2 % )
+    Dedicated logic registers : 0 / 33,216 ( 0 % )
+Total registers : 0
+Total pins : 416 / 475 ( 88 % )
+Total virtual pins : 0
+Total memory bits : 0 / 483,840 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

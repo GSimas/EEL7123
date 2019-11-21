@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 21 13:47:20 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Pattern_Recognition
+Top-level Entity Name : Pattern_Recognition
+Family : Cyclone II
+Total logic elements : 740
+    Total combinational functions : 740
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 416
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
