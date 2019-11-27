@@ -1,0 +1,291 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gsantos
+Eadder7inputs
+Z0 w1574793851
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/sim
+Z5 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd
+Z6 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd
+l0
+L5
+VIjG[canjPQgidL>=RhokD2
+!s100 coHAAZK]:Qm;SBb_jle6a0
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1574801983
+!i10b 1
+Z9 !s108 1574801983.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd|
+Z11 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit -check_synthesis
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+DEx4 work 12 adder7inputs 0 22 IjG[canjPQgidL>=RhokD2
+l46
+L20
+V7FhILB=_3nQ;0n<@i9?b81
+!s100 >Lm2oB<f=daXjZ`:1NiW>1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebooth7
+Z14 w1574801969
+R1
+R2
+R3
+R4
+Z15 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd
+Z16 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd
+l0
+L6
+V2h2YP5FSFB7k8F1XA`BOc1
+!s100 X?QkL5P87;hlA^TGN`Qjg1
+R7
+33
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd|
+Z18 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+DEx4 work 6 booth7 0 22 2h2YP5FSFB7k8F1XA`BOc1
+l48
+L15
+VEmQ9ldO^LL]5Y0WkBS>S10
+!s100 0>ec:_^U[ND[UP9zVWTMP0
+R7
+33
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ebooth_multiplier_tb
+Z19 w1574801976
+R1
+R2
+R3
+R4
+Z20 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd
+Z21 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd
+l0
+L6
+V0nPj:e1aU5mRCM7El=84]1
+!s100 hJH?6OmMTPGOfB<75ET`i1
+R7
+33
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd|
+Z23 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+DEx4 work 19 booth_multiplier_tb 0 22 0nPj:e1aU5mRCM7El=84]1
+l66
+L9
+VoZkfm5im>U4E3@HF@bS@V1
+!s100 _1KfA<mN8eI30zcU@HHmf2
+R7
+33
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Ecpa
+Z24 w1574776995
+R2
+R3
+R4
+Z25 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd
+Z26 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd
+l0
+L4
+Va=dOQjnCk`aOdBnXShhPe2
+!s100 LJMfBcB3oYn4`Pfg@>6oZ1
+R7
+33
+Z27 !s110 1574801984
+!i10b 1
+Z28 !s108 1574801984.000000
+Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd|
+Z30 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd|
+!i113 1
+R12
+R13
+Alogic_circuit
+R2
+R3
+DEx4 work 3 cpa 0 22 a=dOQjnCk`aOdBnXShhPe2
+l27
+L13
+VQg?ez:O2AKVMMQ7T6DJ`i3
+!s100 0DJamHSl2b=8eaLEUQK900
+R7
+33
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R12
+R13
+Ecsa
+Z31 w1574776869
+R2
+R3
+R4
+Z32 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd
+Z33 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd
+l0
+L4
+VYf_=afeY>>fL]Pid@UdbR2
+!s100 i]2<MK0_U]_OF:z6bgc8V0
+R7
+33
+R27
+!i10b 1
+R28
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd|
+Z35 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd|
+!i113 1
+R12
+R13
+Alogic_circuit
+R2
+R3
+DEx4 work 3 csa 0 22 Yf_=afeY>>fL]Pid@UdbR2
+l29
+L15
+V[Rl6e?VKdX=fJf:[F`h0M2
+!s100 O?470VDC97>::IJoXZ30k0
+R7
+33
+R27
+!i10b 1
+R28
+R34
+R35
+!i113 1
+R12
+R13
+Efulladder
+Z36 w1574718938
+R2
+R3
+R4
+Z37 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd
+Z38 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd
+l0
+L4
+V^_``Uo@k=PVLRgcQSejBW3
+!s100 4AS4^m_SKOz@BQ80:2MhP3
+R7
+33
+R27
+!i10b 1
+R28
+Z39 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd|
+Z40 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd|
+!i113 1
+R12
+R13
+Astructural
+R2
+R3
+Z41 DEx4 work 9 fulladder 0 22 ^_``Uo@k=PVLRgcQSejBW3
+l16
+L14
+Z42 Vb=kAR=OT:5:?l:TnPkl@K2
+Z43 !s100 :3XgOjjaYnX<QTgGfW^Am2
+R7
+33
+R27
+!i10b 1
+R28
+R39
+R40
+!i113 1
+R12
+R13
+Etwoscomplement
+Z44 w1574796754
+R1
+R2
+R3
+R4
+Z45 8/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd
+Z46 F/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd
+l0
+L5
+V2kc:Tdl<XK`CahBCSc<oI3
+!s100 :=nYkf9d?RAIRFi]ihnYQ1
+R7
+33
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-work|work|-2008|-explicit|-check_synthesis|-stats=none|/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd|
+Z48 !s107 /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd|
+!i113 1
+R12
+R13
+Aa1
+R1
+R2
+R3
+DEx4 work 14 twoscomplement 0 22 2kc:Tdl<XK`CahBCSc<oI3
+l14
+L13
+V@Fh7VTWPFe<=US7ThVaRh2
+!s100 EaWU=<CN>S4]FOjNCFLz[3
+R7
+33
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13

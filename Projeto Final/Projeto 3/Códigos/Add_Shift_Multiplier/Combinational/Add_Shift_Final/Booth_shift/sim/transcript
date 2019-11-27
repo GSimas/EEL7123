@@ -1,0 +1,503 @@
+# Loading project booth
+# Compile of twoscomplement.vhd failed with 4 errors.
+# Compile of twoscomplement.vhd was successful.
+vsim work.twoscomplement
+# vsim work.twoscomplement 
+# Start time: 16:32:46 on Nov 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.twoscomplement(a1)
+add wave  \
+sim:/twoscomplement/Y \
+sim:/twoscomplement/A
+force -freeze sim:/twoscomplement/A 1111000 0
+run 5 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+force -freeze sim:/twoscomplement/A 0001000 0
+run 5 ns;
+force -freeze sim:/twoscomplement/A 010111 0
+# Value length (6) does not equal array index length (7).
+# 
+# ** Error: (vsim-4011) Invalid force value: 010111 0.
+# 
+force -freeze sim:/twoscomplement/A 0100111 0
+run 5 ns;
+force -freeze sim:/twoscomplement/A 1011001 0
+run 5 ns;
+quit sim
+# unknown switch: sim
+quit -sim
+# End time: 16:42:23 on Nov 26,2019, Elapsed time: 0:09:37
+# Errors: 2, Warnings: 1
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd failed with 2 errors.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.booth_multiplier_tb
+# vsim work.booth_multiplier_tb 
+# Start time: 16:44:42 on Nov 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+add wave  \
+sim:/booth_multiplier_tb/OutputVector \
+sim:/booth_multiplier_tb/InputVector
+run 60 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+add wave  \
+sim:/booth_multiplier_tb/SAM/A6 \
+sim:/booth_multiplier_tb/SAM/A5 \
+sim:/booth_multiplier_tb/SAM/A4 \
+sim:/booth_multiplier_tb/SAM/A3 \
+sim:/booth_multiplier_tb/SAM/A2 \
+sim:/booth_multiplier_tb/SAM/A1 \
+sim:/booth_multiplier_tb/SAM/A0
+restart;
+run 60 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+add wave -position end  sim:/booth_multiplier_tb/SAM/negInputVector
+add wave -position end  sim:/booth_multiplier_tb/SAM/InputVector
+
+restart; run 60 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+add wave  \
+sim:/booth_multiplier_tb/SAM/negShiftedVectors_s \
+sim:/booth_multiplier_tb/SAM/negInputVector \
+sim:/booth_multiplier_tb/SAM/ShiftedVectors_s \
+sim:/booth_multiplier_tb/SAM/InputVector \
+sim:/booth_multiplier_tb/SAM/A6 \
+sim:/booth_multiplier_tb/SAM/A5 \
+sim:/booth_multiplier_tb/SAM/A4 \
+sim:/booth_multiplier_tb/SAM/A3 \
+sim:/booth_multiplier_tb/SAM/A2 \
+sim:/booth_multiplier_tb/SAM/A1 \
+sim:/booth_multiplier_tb/SAM/A0
+restart; run 60 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+add wave -position 0  sim:/booth_multiplier_tb/OutputVector
+add wave  \
+sim:/booth_multiplier_tb/SAM/MULT/TemporaryVector_s \
+sim:/booth_multiplier_tb/SAM/MULT/OutputVector \
+sim:/booth_multiplier_tb/SAM/MULT/A6 \
+sim:/booth_multiplier_tb/SAM/MULT/A5 \
+sim:/booth_multiplier_tb/SAM/MULT/A4 \
+sim:/booth_multiplier_tb/SAM/MULT/A3 \
+sim:/booth_multiplier_tb/SAM/MULT/A2 \
+sim:/booth_multiplier_tb/SAM/MULT/A1 \
+sim:/booth_multiplier_tb/SAM/MULT/A0
+restart; run 60 ns;
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= 726898
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1701629418 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1270310646 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -1530100308 and it should be 608994732
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 532614
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -135330024 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2078735476 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned -71186908 and it should be 209831460
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 606498
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -730975906 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1771300690 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 462182348 and it should be 906778572
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= 938372
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -741150032 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -390357418 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 1026501400 and it should be 1573858072
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= -321678
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -515962
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -442078
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -110204
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= -321678
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -342710760 is not in bounds of subtype NATURAL.
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 0 and it should be 1918157608
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -515962
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1125315988 is not in bounds of subtype NATURAL.
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 0 and it should be 994220856
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -442078
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1579199254 is not in bounds of subtype NATURAL.
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 0 and it should be 2010462952
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -110204
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1586951956 is not in bounds of subtype NATURAL.
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: FAILED!! OutputVector has returned 0 and it should be 378572496
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= -321678
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -515962
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -442078
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -110204
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= -321678
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -515962
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -442078
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -110204
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# Compile of twoscomplement.vhd was successful.
+# Compile of Adder7inputs.vhd was successful.
+# Compile of booth7.vhd was successful.
+# Compile of Booth_Multiplier_tb.vhd was successful.
+# Compile of CPA.vhd was successful.
+# Compile of CSA.vhd was successful.
+# Compile of fulladder.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart; run 60 ns;
+# Loading work.booth_multiplier_tb(structural)
+# Loading work.booth7(structural)
+# Loading work.twoscomplement(a1)
+# Loading work.adder7inputs(structural)
+# Loading work.csa(logic_circuit)
+# Loading work.fulladder(structural)
+# Loading work.cpa(logic_circuit)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: InputVector <= -321678
+#    Time: 0 ps  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -515962
+#    Time: 5 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -442078
+#    Time: 15 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: InputVector <= -110204
+#    Time: 25 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# ** Note: PASSED!!
+#    Time: 35 ns  Iteration: 0  Instance: /booth_multiplier_tb
+# End time: 18:00:17 on Nov 26,2019, Elapsed time: 1:15:35
+# Errors: 0, Warnings: 67
