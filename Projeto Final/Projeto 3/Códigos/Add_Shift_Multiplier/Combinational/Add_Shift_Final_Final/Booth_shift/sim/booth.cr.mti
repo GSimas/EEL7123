@@ -1,0 +1,61 @@
+/home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CPA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CPA
+-- Compiling architecture Logic_Circuit of CPA
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/twoscomplement.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity twoscomplement
+-- Compiling architecture a1 of twoscomplement
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Adder7inputs.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Adder7inputs
+-- Compiling architecture Structural of Adder7inputs
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/Booth_Multiplier_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Booth_Multiplier_tb
+-- Compiling architecture Structural of Booth_Multiplier_tb
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/booth7.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity booth7
+-- Compiling architecture Structural of booth7
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/fulladder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture structural of fulladder
+
+} {} {}} /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd {1 {vcom -work work -2008 -explicit -check_synthesis -stats=none /home/gsantos/Documents/Circuitos_Aritmeticos/Combinational-20191126T130253Z-001/Combinational/Booth_shift/CSA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CSA
+-- Compiling architecture Logic_Circuit of CSA
+
+} {} {}}
