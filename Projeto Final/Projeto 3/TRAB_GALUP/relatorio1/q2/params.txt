@@ -1,0 +1,7 @@
+|VT0| = 1.40003 V
+IoW/L = 138.032 nA
+n = 1.63
+Is = 564.799 nA
+Beta = 0.001025 A/V²
+coeff = 0.0177 sqrt(A)/V
+slope = 97.56 mV/dec 
